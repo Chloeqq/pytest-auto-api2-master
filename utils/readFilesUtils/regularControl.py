@@ -3,14 +3,16 @@ Desc : 自定义函数调用
 # @Time : 2022/4/2 9:32 上午
 # @Author : liuYunWin
 """
-import json
-import re
 import datetime
-from utils.otherUtils.jsonpath import jsonpath
-from faker import Faker
+import json
 import random
-from utils.logUtils.logControl import ERROR
+import re
+
+from faker import Faker
+
 from utils.cacheUtils.cacheControl import Cache
+from utils.logUtils.logControl import ERROR
+from utils.otherUtils.jsonpath import jsonpath
 
 
 class Context:
@@ -24,38 +26,6 @@ class Context:
         """
         rn = random.randint(0, 5000)
         return rn
-
-    @property
-    def get_video_plan_name(self) -> str:
-        """
-        :return: 随机计划名
-        """
-        name = "ci短视频计划" + str(random.randint(0, 5000))
-        return name
-
-    @property
-    def get_live_plan_name(self) -> str:
-        """
-        :return: 随机计划名
-        """
-        name = "ci直播计划" + str(random.randint(0, 5000))
-        return name
-
-    @property
-    def get_group_live_name(self) -> str:
-        """
-        :return: 随机计划组名
-        """
-        name = "ci直播组" + str(random.randint(0, 5000))
-        return name
-
-    @property
-    def get_group_video_name(self) -> str:
-        """
-        :return: 随机计划组名
-        """
-        name = "ci短视频组" + str(random.randint(0, 5000))
-        return name
 
     @property
     def get_phone(self) -> int:
@@ -97,7 +67,6 @@ class Context:
     @property
     def get_male_name(self) -> str:
         """
-
         :return: 男生姓名
         """
         male_name = self.f.name_male()
@@ -106,7 +75,6 @@ class Context:
     @property
     def get_email(self) -> str:
         """
-
         :return: 生成邮箱
         """
         email = self.f.email()
