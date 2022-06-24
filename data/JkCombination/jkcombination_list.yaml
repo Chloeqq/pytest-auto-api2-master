@@ -1,0 +1,39 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 搭销组合模块
+  allureStory: 搭销组合列表
+
+combination_list_01:
+    host: ${{jk_app_host}}
+    url: /v5/combinations/${{productCode}}
+    method: GET
+    detail: 根据产品ID查询相关搭销
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: Flase
+        # 依赖的数据
+    dependence_case_data:
+      - case_id: combination_detailpage_01
+        dependent_data: response
+        jsonpath: $.data.mainSkuCode
+        replace_key: $.url
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:

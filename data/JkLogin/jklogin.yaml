@@ -1,0 +1,236 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 登录模块
+  allureStory: 登录
+
+jk_login_01:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 正常登录
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '13330809542'
+      password: '123456'
+      platform: 3
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      scope:
+        jsonpath: $.scope
+        type: ==
+        value: openid
+        AssertType:
+    sql:
+
+jk_login_02:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 手机号错误
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '2354452958'
+      password: '123456'
+      platform: 3
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000003'
+        AssertType:
+      message:
+        jsonpath: $.message
+        type: ==
+        value: '账号不存在'
+        AssertType:
+
+    sql:
+
+jk_login_03:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 密码长度错误
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '13330809542'
+      password: '1234567'
+      platform: 3
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000003'
+        AssertType:
+    sql:
+
+jk_login_04:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 密码为空
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '13330809542'
+      password: ' '
+      platform: 3
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000002'
+        AssertType:
+      message:
+        jsonpath: $.message
+        type: ==
+        value: '[密码不能为空] [密码长度为6-16个字符] '
+        AssertType:
+    sql:
+
+jk_login_05:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 05_登录失败_平台错误
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '13330809542'
+      password: '123456'
+      platform: 4
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000002'
+        AssertType:
+      message:
+        jsonpath: $.message
+        type: ==
+        value: '[无效的平台类型] '
+        AssertType:
+    sql:
+
+jk_login_06:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 06_登录失败_平台为空
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: '13330809542'
+      password: '123456'
+      platform:
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000002'
+        AssertType:
+      message:
+        jsonpath: $.message
+        type: ==
+        value: '[平台类型不能为空] '
+        AssertType:
+    sql:
+
+jk_login_07:
+    host: ${{jk_java_host}}
+    url: /passport/account/login/v2
+    method: POST
+    detail: 06_登录失败_手机号为空
+    headers:
+      Content-Type: application/json
+    # 请求的数据，是 params 还是 json、或者file、date
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      loginName: ' '
+      password: '123456'
+      platform: 3
+      # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      status_code: 400
+      code:
+        jsonpath: $.code
+        type: ==
+        value: '000002'
+        AssertType:
+      message:
+        jsonpath: $.message
+        type: ==
+        value: '[用户名不能为空] '
+        AssertType:
+    sql:
