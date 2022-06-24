@@ -5,17 +5,19 @@
 
 import os
 import traceback
+
 import pytest
-from utils.otherUtils.get_conf_data import project_name, get_excel_report_switch
-from utils.logUtils.logControl import INFO
-from utils.otherUtils.get_conf_data import get_notification_type
-from utils.noticUtils.weChatSendControl import WeChatSend
-from utils.noticUtils.dingtalkControl import DingTalkSendMsg
-from utils.noticUtils.sendmailControl import SendEmail
+
 from Enums.notificationType_enum import NotificationType
+from utils.logUtils.logControl import INFO
+from utils.noticUtils.dingtalkControl import DingTalkSendMsg
 from utils.noticUtils.feishuControl import FeiShuTalkChatBot
-from utils.readFilesUtils.caseAutomaticControl import TestCaseAutomaticGeneration
+from utils.noticUtils.sendmailControl import SendEmail
+from utils.noticUtils.weChatSendControl import WeChatSend
 from utils.otherUtils.allureDate.error_case_excel import ErrorCaseExcel
+from utils.otherUtils.get_conf_data import get_notification_type
+from utils.otherUtils.get_conf_data import project_name, get_excel_report_switch
+from utils.readFilesUtils.caseAutomaticControl import TestCaseAutomaticGeneration
 
 
 def run():
@@ -32,7 +34,7 @@ def run():
         TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
-                     '--alluredir', './report/tmp', "--clean-alluredir"])
+                     '--alluredir', '.${WORKSPACE}/report/tmp', "--clean-alluredir"])
         """
                    --reruns: 失败重跑次数
                    --count: 重复执行次数
