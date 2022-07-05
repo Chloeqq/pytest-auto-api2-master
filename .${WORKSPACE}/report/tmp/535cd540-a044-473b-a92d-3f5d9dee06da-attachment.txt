@@ -1,0 +1,13 @@
+INFO     /Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/logs/info_2022-07-05.log:logDecoratorl.py:36 
+=================================================================================
+测试标题: 05_登录失败_平台错误
+请求方式: POST
+请求头:   {'Content-Type': 'application/json'}
+请求路径: http://acgi.tst.jianke.com/passport/account/login/v2
+请求内容: {'loginName': '13330809542', 'password': '123456', 'platform': 4}
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'code': '000002', 'message': '[无效的平台类型] '}
+接口响应时长: 18.445 ms
+Http状态码: 400
+数据库断言数据: {'sql': None}
+=================================================================================
