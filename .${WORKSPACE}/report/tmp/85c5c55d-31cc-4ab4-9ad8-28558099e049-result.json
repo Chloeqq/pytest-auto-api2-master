@@ -1,0 +1,155 @@
+{
+  "name": "test_jklogin[06_登录失败_手机号为空]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://acgi.tst.jianke.com/passport/account/login/v2",
+      "status": "passed",
+      "start": 1657006145014,
+      "stop": 1657006145014
+    },
+    {
+      "name": "请求方式: POST",
+      "status": "passed",
+      "start": 1657006145014,
+      "stop": 1657006145014
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "b03a7f54-5c9e-467a-9d8e-be1bdc7d25f6-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006145014,
+      "stop": 1657006145014
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "ab82e5bc-1da0-469e-ad1a-03b106364e39-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006145014,
+      "stop": 1657006145014
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "ecf8051a-a69d-4be0-af2f-f68490f4d3f8-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006145014,
+      "stop": 1657006145014
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "486f111c-df40-4842-88fb-1ead1e7661bc-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006145014,
+      "stop": 1657006145015
+    },
+    {
+      "name": "响应耗时(s): 19.325",
+      "status": "passed",
+      "start": 1657006145015,
+      "stop": 1657006145015
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "727ce4b7-4271-4152-ba42-f34d9bf073ef-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006145015,
+      "stop": 1657006145015
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "287f87bf-f73a-47d2-805a-386a2c48b267-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '06_登录失败_手机号为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': ' ', 'password': '123456', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[用户名不能为空] ', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1657006144990,
+  "stop": 1657006145015,
+  "uuid": "ab97191a-14f9-4f12-87dd-2c7b846ff3ce",
+  "historyId": "bedcb4e38411580218b767af7a15a2d6",
+  "testCaseId": "b083efa356c6aad05e71841f1055d19c",
+  "fullName": "test_case.JkLogin.test_jklogin.TestJklogin#test_jklogin",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "story",
+      "value": "登录"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkLogin"
+    },
+    {
+      "name": "suite",
+      "value": "test_jklogin"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJklogin"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "2059-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkLogin.test_jklogin"
+    }
+  ]
+}

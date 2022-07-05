@@ -1,0 +1,155 @@
+{
+  "name": "test_jkflash[查询全局广告信息]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://fe-acgi-v2.internal.jianke.com/v5/flash",
+      "status": "passed",
+      "start": 1657006152382,
+      "stop": 1657006152382
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1657006152382,
+      "stop": 1657006152382
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "e0a56de1-dce3-49a3-a5fa-ba2aaafefd4b-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006152382,
+      "stop": 1657006152384
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "ecdceb26-6ef6-49a7-8862-d9681b59df6d-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006152384,
+      "stop": 1657006152384
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "513b1587-b685-4d44-96fd-65af0b389787-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006152384,
+      "stop": 1657006152386
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "89f04839-006a-40f5-b292-61ca79af9969-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006152386,
+      "stop": 1657006152387
+    },
+    {
+      "name": "响应耗时(s): 1750.128",
+      "status": "passed",
+      "start": 1657006152387,
+      "stop": 1657006152387
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "bfdb9c33-6e45-4212-82bc-5fde3cc13e6d-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006152388,
+      "stop": 1657006152389
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "8a5af5c0-c047-4bb0-a34a-538eef7b1238-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/flash', 'detail': '查询全局广告信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'data': {'jsonpath': '$.data', 'type': 'contains', 'value': 'globalStyle', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1657006150622,
+  "stop": 1657006152400,
+  "uuid": "d9dfaead-74eb-4ba2-baf4-91ede293a2a8",
+  "historyId": "b5147afdd38e7c3078f3f6ee2128fab9",
+  "testCaseId": "9df7099452a9d4287b8ee5113fcaa971",
+  "fullName": "test_case.JkPromos.test_jkflash.TestJkflash#test_jkflash",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "秒杀模块"
+    },
+    {
+      "name": "story",
+      "value": "秒杀活动"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkPromos"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkflash"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkflash"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "2059-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkPromos.test_jkflash"
+    }
+  ]
+}

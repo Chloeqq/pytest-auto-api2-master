@@ -129,7 +129,7 @@ jk_login_04:
       message:
         jsonpath: $.message
         type: ==
-        value: '[密码不能为空] [密码长度为6-16个字符] '
+        value: '[密码长度为6-16个字符] [密码不能为空]'
         AssertType:
     sql:
 

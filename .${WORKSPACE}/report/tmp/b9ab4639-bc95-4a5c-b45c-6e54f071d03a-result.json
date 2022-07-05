@@ -1,0 +1,155 @@
+{
+  "name": "test_jkcombination_detailpage[搭销详情页整体数据]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://fe-acgi-v2.internal.jianke.com/v5/combination/110865",
+      "status": "passed",
+      "start": 1657006144372,
+      "stop": 1657006144372
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1657006144372,
+      "stop": 1657006144372
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "1f6eb7c9-50a5-449a-8adf-4d14a97e17b0-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006144372,
+      "stop": 1657006144378
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "44ff8ac2-cef2-4de4-ad1e-96d6c1889ccb-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006144378,
+      "stop": 1657006144379
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "e26f411c-7f21-4d70-84b9-dae51d40c443-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006144379,
+      "stop": 1657006144379
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "5faea546-10c9-47da-a33d-6b7e0d6a77da-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006144379,
+      "stop": 1657006144380
+    },
+    {
+      "name": "响应耗时(s): 945.332",
+      "status": "passed",
+      "start": 1657006144380,
+      "stop": 1657006144380
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "4d6b0baa-0f04-475b-97e9-1ef41a59e633-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1657006144380,
+      "stop": 1657006144380
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "01c1ab5d-64ac-4fbb-89a8-26889167f4e0-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/combination/110865', 'detail': '搭销详情页整体数据', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1657006143399,
+  "stop": 1657006144389,
+  "uuid": "eb4b9c4b-88db-4c96-8a85-13125d6be104",
+  "historyId": "183f35b305c82a4967a43a2ddce59c0e",
+  "testCaseId": "85d8f967761e5151c7d20c41af4eb514",
+  "fullName": "test_case.JkCombination.test_jkcombination_detailpage.TestJkcombinationDetailpage#test_jkcombination_detailpage",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "story",
+      "value": "登录"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkCombination"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkcombination_detailpage"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkcombinationDetailpage"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "2059-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkCombination.test_jkcombination_detailpage"
+    }
+  ]
+}
