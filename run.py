@@ -49,7 +49,7 @@ def run():
                    """
 
         os.system(
-            r"allure generate ./Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp -o ./Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
+            r"allure generate /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp -o /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
         # 判断通知类型，根据配置发送不同的报告通知
         if get_notification_type() == NotificationType.DEFAULT.value:
             pass
@@ -66,7 +66,7 @@ def run():
         else:
             raise ValueError("通知类型配置错误，暂不支持该类型通知")
         os.system(
-            r"allure serve ./Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp -h 127.0.0.1 -p 9797")
+            r"allure serve /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp -h 127.0.0.1 -p 9797")
 
     except Exception:
         # 如有异常，相关异常发送邮件
