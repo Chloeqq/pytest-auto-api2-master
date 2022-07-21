@@ -1,10 +1,10 @@
 # 搭销组合ID
-combineId: 110865
+combineId: 102190
 
 # 代找药商品ID
 
-# 普通商品ID
-productCode: 13769
+# 普通商品ID、套装
+productCode: 11692
 
 # 冷链商品ID
 
@@ -13,3 +13,12 @@ productCode: 13769
 # 赠品商品ID
 
 # 超值换购商品ID
+
+# 处方药类型
+isRxproductCode:
+
+# 严管处方药
+isRxDrugNeedPaperprocductCode:
+
+
+

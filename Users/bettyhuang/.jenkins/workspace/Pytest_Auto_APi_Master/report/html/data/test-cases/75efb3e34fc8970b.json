@@ -1,0 +1,360 @@
+{
+  "uid": "75efb3e34fc8970b",
+  "name": "test_jksettle_settings[严管处方商品--严管校验包88]",
+  "fullName": "test_case.JkSettle.test_jksettle_settings.TestJksettleSettings#test_jksettle_settings",
+  "historyId": "c8b87a51e549a5569fdc0151251f9f2f",
+  "time": {
+    "start": 1658389343351,
+    "stop": 1658389343410,
+    "duration": 59
+  },
+  "description": "\n        :param :\n        :return:\n        ",
+  "descriptionHtml": "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "_session_faker",
+      "time": {
+        "start": 1658389336677,
+        "stop": 1658389336691,
+        "duration": 14
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "get_x_jk_x",
+      "time": {
+        "start": 1658389336691,
+        "stop": 1658389336695,
+        "duration": 4
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "work_login_init",
+      "time": {
+        "start": 1658389336695,
+        "stop": 1658389336832,
+        "duration": 137
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "write_case_process",
+      "time": {
+        "start": 1658389336832,
+        "stop": 1658389336889,
+        "duration": 57
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "case_skip",
+      "time": {
+        "start": 1658389343351,
+        "stop": 1658389343351,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    }
+  ],
+  "testStage": {
+    "description": "\n        :param :\n        :return:\n        ",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "请求URL: http://setting-service.tst.jianke.com/svc/settings/productCodes",
+        "time": {
+          "start": 1658389343393,
+          "stop": 1658389343393,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求方式: GET",
+        "time": {
+          "start": 1658389343393,
+          "stop": 1658389343393,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求头: ",
+        "time": {
+          "start": 1658389343393,
+          "stop": 1658389343394,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "f17be82422e5cb73",
+            "name": "请求头: ",
+            "source": "f17be82422e5cb73.json",
+            "type": "application/json",
+            "size": 1104
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "请求数据: ",
+        "time": {
+          "start": 1658389343394,
+          "stop": 1658389343394,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "b7e3a1d8928822af",
+            "name": "请求数据: ",
+            "source": "b7e3a1d8928822af.json",
+            "type": "application/json",
+            "size": 80
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "依赖数据: ",
+        "time": {
+          "start": 1658389343394,
+          "stop": 1658389343395,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "8d1ffccac6b3ee73",
+            "name": "依赖数据: ",
+            "source": "8d1ffccac6b3ee73.json",
+            "type": "application/json",
+            "size": 32
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "预期数据: ",
+        "time": {
+          "start": 1658389343395,
+          "stop": 1658389343395,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "67b9586581b91b9a",
+            "name": "预期数据: ",
+            "source": "67b9586581b91b9a.json",
+            "type": "application/json",
+            "size": 191
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "响应耗时(s): 38.693",
+        "time": {
+          "start": 1658389343395,
+          "stop": 1658389343395,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "响应结果: ",
+        "time": {
+          "start": 1658389343395,
+          "stop": 1658389343403,
+          "duration": 8
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "b381dc1b3e4f5f1",
+            "name": "响应结果: ",
+            "source": "b381dc1b3e4f5f1.json",
+            "type": "application/json",
+            "size": 6849
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "570e3732a63a10e3",
+        "name": "log",
+        "source": "570e3732a63a10e3.txt",
+        "type": "text/plain",
+        "size": 8271
+      }
+    ],
+    "parameters": [],
+    "stepsCount": 8,
+    "attachmentsCount": 6,
+    "shouldDisplayMessage": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "story",
+      "value": "结算页用药人信息"
+    },
+    {
+      "name": "feature",
+      "value": "结算模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkSettle"
+    },
+    {
+      "name": "suite",
+      "value": "test_jksettle_settings"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJksettleSettings"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkSettle.test_jksettle_settings"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方商品--严管校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 879207, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "75efb3e34fc8970b.json",
+  "parameterValues": [
+    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方商品--严管校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 879207, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+  ]
+}

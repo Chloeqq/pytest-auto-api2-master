@@ -10,13 +10,13 @@
           "children": [
             {
               "name": "test_jklogin[密码为空]",
-              "uid": "d858b34485810204",
+              "uid": "60f33134280702ae",
               "parentUid": "a0017ad855102fea08b8682d27fec4ca",
               "status": "failed",
               "time": {
-                "start": 1657009936868,
-                "stop": 1657009936925,
-                "duration": 57
+                "start": 1658389339011,
+                "stop": 1658389339125,
+                "duration": 114
               },
               "flaky": false,
               "newFailed": false,
@@ -25,7 +25,47 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '密码为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': ' ', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[密码不能为空] [密码长度为6-16个字符] ', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '密码为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': ' ', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[密码长度为6-16个字符] [密码不能为空]', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+              ]
+            },
+            {
+              "name": "test_jkflash[查询全局广告信息]",
+              "uid": "1bc84e3ce350c4b9",
+              "parentUid": "a0017ad855102fea08b8682d27fec4ca",
+              "status": "failed",
+              "time": {
+                "start": 1658389342054,
+                "stop": 1658389343192,
+                "duration": 1138
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/flash', 'detail': '查询全局广告信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'data': {'jsonpath': '$.data', 'type': 'contains', 'value': 'globalStyle', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+              ]
+            },
+            {
+              "name": "test_jkrxRule_settings[查询用药人校验包具体信息]",
+              "uid": "1afb6d3ccfccb3bc",
+              "parentUid": "a0017ad855102fea08b8682d27fec4ca",
+              "status": "failed",
+              "time": {
+                "start": 1658389343214,
+                "stop": 1658389343277,
+                "duration": 63
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v4/rxRule/setting', 'detail': '查询用药人校验包具体信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 11692, 'port': 'app'}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             }
           ],

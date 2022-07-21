@@ -1,0 +1,155 @@
+{
+  "name": "test_jkorders_list[查询订单列表_待付款]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://fe-acgi-v2.tst.jianke.com/v5/orders",
+      "status": "passed",
+      "start": 1658389341108,
+      "stop": 1658389341109
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1658389341109,
+      "stop": 1658389341109
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "128163c9-a195-404a-9add-03e69d0f2d18-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389341109,
+      "stop": 1658389341111
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "d340c734-c1e3-4eac-8854-c3ef31b5269e-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389341111,
+      "stop": 1658389341111
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "a1f3c3a2-4750-4ae0-8905-377b566458e7-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389341111,
+      "stop": 1658389341112
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "3e18a7f4-88da-460f-b086-bc74eeade668-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389341112,
+      "stop": 1658389341112
+    },
+    {
+      "name": "响应耗时(s): 259.23600000000005",
+      "status": "passed",
+      "start": 1658389341112,
+      "stop": 1658389341112
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "c3a8f556-711a-4a4f-b03e-c67216e7736f-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389341113,
+      "stop": 1658389341119
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "1ca219c6-5904-4302-b641-2560a880de4e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_待付款', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitPay', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389340840,
+  "stop": 1658389341126,
+  "uuid": "d627a838-cb35-48ec-b8f1-56a94e3a1cad",
+  "historyId": "e83f1cf6f1cea95d2699544e9d252d02",
+  "testCaseId": "b788afb39305602e792d5d029670d59b",
+  "fullName": "test_case.JkOrders.test_jkorders_list.TestJkordersList#test_jkorders_list",
+  "labels": [
+    {
+      "name": "story",
+      "value": "订单列表"
+    },
+    {
+      "name": "feature",
+      "value": "订单模块"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkOrders"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkorders_list"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkordersList"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkOrders.test_jkorders_list"
+    }
+  ]
+}

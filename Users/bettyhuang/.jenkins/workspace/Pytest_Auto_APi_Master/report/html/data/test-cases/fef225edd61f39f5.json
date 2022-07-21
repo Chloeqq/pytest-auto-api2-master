@@ -1,0 +1,360 @@
+{
+  "uid": "fef225edd61f39f5",
+  "name": "test_jklogin[06_登录失败_平台为空]",
+  "fullName": "test_case.JkLogin.test_jklogin.TestJklogin#test_jklogin",
+  "historyId": "4b0501d22722f5ebce76fa2e6f735077",
+  "time": {
+    "start": 1658389339217,
+    "stop": 1658389339249,
+    "duration": 32
+  },
+  "description": "\n        :param :\n        :return:\n        ",
+  "descriptionHtml": "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "_session_faker",
+      "time": {
+        "start": 1658389336677,
+        "stop": 1658389336691,
+        "duration": 14
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "get_x_jk_x",
+      "time": {
+        "start": 1658389336691,
+        "stop": 1658389336695,
+        "duration": 4
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "work_login_init",
+      "time": {
+        "start": 1658389336695,
+        "stop": 1658389336832,
+        "duration": 137
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "write_case_process",
+      "time": {
+        "start": 1658389336832,
+        "stop": 1658389336889,
+        "duration": 57
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "case_skip",
+      "time": {
+        "start": 1658389339217,
+        "stop": 1658389339217,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    }
+  ],
+  "testStage": {
+    "description": "\n        :param :\n        :return:\n        ",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "请求URL: http://acgi.tst.jianke.com/passport/account/login/v2",
+        "time": {
+          "start": 1658389339248,
+          "stop": 1658389339248,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求方式: POST",
+        "time": {
+          "start": 1658389339248,
+          "stop": 1658389339248,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求头: ",
+        "time": {
+          "start": 1658389339248,
+          "stop": 1658389339249,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "4626f44a6627d633",
+            "name": "请求头: ",
+            "source": "4626f44a6627d633.json",
+            "type": "application/json",
+            "size": 38
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "请求数据: ",
+        "time": {
+          "start": 1658389339249,
+          "stop": 1658389339249,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "fc85a3acc38dbd43",
+            "name": "请求数据: ",
+            "source": "fc85a3acc38dbd43.json",
+            "type": "application/json",
+            "size": 70
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "依赖数据: ",
+        "time": {
+          "start": 1658389339249,
+          "stop": 1658389339249,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "8ac75d5d5b687e08",
+            "name": "依赖数据: ",
+            "source": "8ac75d5d5b687e08.json",
+            "type": "application/json",
+            "size": 32
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "预期数据: ",
+        "time": {
+          "start": 1658389339249,
+          "stop": 1658389339249,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "2ddf60cc3a071a96",
+            "name": "预期数据: ",
+            "source": "2ddf60cc3a071a96.json",
+            "type": "application/json",
+            "size": 219
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "响应耗时(s): 28.996000000000002",
+        "time": {
+          "start": 1658389339249,
+          "stop": 1658389339249,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "响应结果: ",
+        "time": {
+          "start": 1658389339249,
+          "stop": 1658389339249,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "a9fa4ad4ca81a704",
+            "name": "响应结果: ",
+            "source": "a9fa4ad4ca81a704.json",
+            "type": "application/json",
+            "size": 62
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "24310e5d6dc94e0d",
+        "name": "log",
+        "source": "24310e5d6dc94e0d.txt",
+        "type": "text/plain",
+        "size": 769
+      }
+    ],
+    "parameters": [],
+    "stepsCount": 8,
+    "attachmentsCount": 6,
+    "shouldDisplayMessage": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "story",
+      "value": "登录"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkLogin"
+    },
+    {
+      "name": "suite",
+      "value": "test_jklogin"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJklogin"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkLogin.test_jklogin"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '06_登录失败_平台为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': '123456', 'platform': None}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[平台类型不能为空] ', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "fef225edd61f39f5.json",
+  "parameterValues": [
+    "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '06_登录失败_平台为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': '123456', 'platform': None}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[平台类型不能为空] ', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+  ]
+}

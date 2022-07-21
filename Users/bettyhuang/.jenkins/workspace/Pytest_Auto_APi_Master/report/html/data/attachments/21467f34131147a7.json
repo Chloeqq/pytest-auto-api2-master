@@ -1,0 +1,1 @@
+"{'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}}"

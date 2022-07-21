@@ -1,0 +1,155 @@
+{
+  "name": "test_jkdetailpage[搭配详情页数据]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://fe-acgi-v2.tst.jianke.com/v5/products/11692",
+      "status": "passed",
+      "start": 1658389338659,
+      "stop": 1658389338659
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1658389338659,
+      "stop": 1658389338659
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "cd32b6b5-819b-4da2-b6c2-71c8bb1ae0a6-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338659,
+      "stop": 1658389338661
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "4422e24c-8acf-4ded-81a7-72b118464597-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338661,
+      "stop": 1658389338661
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "d986dc1c-b53b-4004-a20b-917e782c3d99-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338661,
+      "stop": 1658389338662
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "1b6fbde6-5da1-43d0-ba84-36df208dcae2-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338662,
+      "stop": 1658389338662
+    },
+    {
+      "name": "响应耗时(s): 1622.284",
+      "status": "passed",
+      "start": 1658389338662,
+      "stop": 1658389338662
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "b4330595-1d30-4136-9ec3-75cd9ea44473-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338663,
+      "stop": 1658389338663
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "e3a56568-0c2c-49a6-a829-1482674f6db6-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/products/11692', 'detail': '搭配详情页数据', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389337025,
+  "stop": 1658389338672,
+  "uuid": "ac5780f4-742f-4aa9-bfec-ef7ad5ba7c15",
+  "historyId": "46deb72477d23f3a94bbb62ce922a5fb",
+  "testCaseId": "9596b32c03560fa2b2e59e08aab54515",
+  "fullName": "test_case.JkDetailPage.test_jkdetailpage.TestJkdetailpage#test_jkdetailpage",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "商品详情页"
+    },
+    {
+      "name": "story",
+      "value": "单品详情页"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkDetailPage"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkdetailpage"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkdetailpage"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkDetailPage.test_jkdetailpage"
+    }
+  ]
+}

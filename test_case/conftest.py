@@ -4,19 +4,21 @@
 # @Author : 余少琪
 import json
 import os
-import pytest
 import time
+
 import allure
+import pytest
 import requests
-from common.setting import ConfigHandler
-from utils.readFilesUtils.get_yaml_data_analysis import CaseData
-from utils.cacheUtils.cacheControl import Cache
-from utils.readFilesUtils.get_all_files_path import get_all_files
-from utils.logUtils.logControl import WARNING, INFO, ERROR
+
 from Enums.yamlData_enum import YAMLDate
+from common.setting import ConfigHandler
+from utils.cacheUtils.cacheControl import Cache
+from utils.logUtils.logControl import WARNING, INFO, ERROR
 from utils.otherUtils.allureDate.allure_tools import allure_step, allure_step_no
-from utils.requestsUtils.encryption_algorithm_control import md5_encryption
+from utils.readFilesUtils.get_all_files_path import get_all_files
+from utils.readFilesUtils.get_yaml_data_analysis import CaseData
 from utils.readFilesUtils.yamlControl import GetYamlData
+from utils.requestsUtils.encryption_algorithm_control import md5_encryption
 
 
 @pytest.fixture(scope="session", autouse=False)
@@ -77,7 +79,7 @@ def work_login_init():
     # 请求登录接口
     res = requests.post(url=url, data=data, verify=True, headers=headers).json()
     token = res["token_type"] + " " + res["access_token"]
-    print(token)
+    # print(token)
     Cache("token").set_caches(token)
 
 @pytest.fixture(scope="session", autouse=True)

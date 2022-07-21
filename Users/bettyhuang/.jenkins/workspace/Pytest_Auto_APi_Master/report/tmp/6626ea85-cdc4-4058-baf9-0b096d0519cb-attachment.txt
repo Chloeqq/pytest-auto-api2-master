@@ -1,0 +1,13 @@
+INFO     /Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/logs/info_2022-07-21.log:logDecoratorl.py:36 
+=================================================================================
+测试标题: 密码为空
+请求方式: POST
+请求头:   {'Content-Type': 'application/json'}
+请求路径: http://acgi.tst.jianke.com/passport/account/login/v2
+请求内容: {'loginName': '13330809542', 'password': ' ', 'platform': 3}
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'code': '000002', 'message': '[密码长度为6-16个字符] [密码不能为空] '}
+接口响应时长: 90.521 ms
+Http状态码: 400
+数据库断言数据: {'sql': None}
+=================================================================================

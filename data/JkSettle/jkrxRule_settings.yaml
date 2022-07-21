@@ -1,0 +1,38 @@
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 结算模块
+  allureStory: 用药人信息
+
+jk_rxRule_setting_01:
+  host: ${{jk_app_host}}
+  url: /v4/rxRule/setting
+  method: GET
+  detail: 查询用药人校验包具体信息
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 11692
+    port: app
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+  sql:
+

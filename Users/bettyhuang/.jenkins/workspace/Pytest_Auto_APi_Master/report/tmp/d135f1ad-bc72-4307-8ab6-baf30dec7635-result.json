@@ -1,0 +1,155 @@
+{
+  "name": "test_jklogin[密码长度错误]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://acgi.tst.jianke.com/passport/account/login/v2",
+      "status": "passed",
+      "start": 1658389338986,
+      "stop": 1658389338986
+    },
+    {
+      "name": "请求方式: POST",
+      "status": "passed",
+      "start": 1658389338986,
+      "stop": 1658389338986
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "ca9887a3-68d5-4638-b755-40e42535f7a8-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338986,
+      "stop": 1658389338987
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "47288d9e-aec7-4b7f-aebf-0984527840bc-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338987,
+      "stop": 1658389338987
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "246298fd-ceb8-4158-ae8f-5773c20c4d02-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338987,
+      "stop": 1658389338988
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "d8601913-c79f-40b1-a8c9-e3fd05466e11-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338988,
+      "stop": 1658389338991
+    },
+    {
+      "name": "响应耗时(s): 33.634",
+      "status": "passed",
+      "start": 1658389338992,
+      "stop": 1658389338992
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "e666a64a-ef86-4835-9573-fb3c374fc1d4-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389338992,
+      "stop": 1658389338993
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "3258fbba-c34d-4ddc-886b-bd77e466ba8e-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '密码长度错误', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': '1234567', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000003', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389338945,
+  "stop": 1658389338993,
+  "uuid": "1aa69dde-505f-4367-b009-027a36910520",
+  "historyId": "2a6bfd953b0130f5c02549d122ce5410",
+  "testCaseId": "b083efa356c6aad05e71841f1055d19c",
+  "fullName": "test_case.JkLogin.test_jklogin.TestJklogin#test_jklogin",
+  "labels": [
+    {
+      "name": "story",
+      "value": "登录"
+    },
+    {
+      "name": "feature",
+      "value": "登录模块"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkLogin"
+    },
+    {
+      "name": "suite",
+      "value": "test_jklogin"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJklogin"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkLogin.test_jklogin"
+    }
+  ]
+}

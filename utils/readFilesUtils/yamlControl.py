@@ -4,7 +4,9 @@
 # @Author : 余少琪
 
 import os
+
 import yaml.scanner
+
 from utils.readFilesUtils.regularControl import regular
 
 
@@ -83,7 +85,6 @@ class GetCaseData(GetYamlData):
             _yaml_data = self.get_yaml_data()
             # 正则处理yaml文件中的数据
             re_data = regular(str(_yaml_data))
-            print(re_data)
             return eval(re_data)
         except yaml.parser.ParserError as e:
             raise yaml.parser.ParserError("yaml格式不正确, 请检查下方对应路径中的文件内容 {0}".format(e))
@@ -94,7 +95,7 @@ class GetCaseData(GetYamlData):
 if __name__ == "__main__":
     pass
     # file_dir = r"/Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/data/JkLogin/jklogin.yaml"
-    # print(f"获取yaml文件中的数据：\n",GetYamlData(file_dir).get_yaml_data())
+    # print(f"获取yaml文件中的数据：\n", GetYamlData(file_dir).get_yaml_data())
     # print(type(GetYamlData(file_dir).get_yaml_data()))
     # print(f"\n获取yaml文件中的数据并指定格式：\n", GetCaseData(file_dir).get_yaml_case_data())
     # print(type(GetCaseData(file_dir).get_yaml_case_data()))

@@ -1,6 +1,18 @@
 {
-  "total": 4,
+  "total": 6,
   "items": [
+    {
+      "uid": "66fc0251c1444721829df15d1fb8fe99",
+      "name": "test_case.JkSettle",
+      "statistic": {
+        "failed": 1,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 11,
+        "unknown": 0,
+        "total": 12
+      }
+    },
     {
       "uid": "13148423d32efe759a1d05f655930d49",
       "name": "test_case.JkLogin",
@@ -11,6 +23,18 @@
         "passed": 6,
         "unknown": 0,
         "total": 7
+      }
+    },
+    {
+      "uid": "c9289771acf55fb51ed37495f7b85f42",
+      "name": "test_case.JkPromos",
+      "statistic": {
+        "failed": 1,
+        "broken": 0,
+        "skipped": 0,
+        "passed": 0,
+        "unknown": 0,
+        "total": 1
       }
     },
     {
@@ -38,8 +62,8 @@
       }
     },
     {
-      "uid": "c9289771acf55fb51ed37495f7b85f42",
-      "name": "test_case.JkPromos",
+      "uid": "b6c4ef6e6d6fa2b6003021daabdf39ae",
+      "name": "test_case.JkDetailPage",
       "statistic": {
         "failed": 0,
         "broken": 0,

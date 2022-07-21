@@ -13,13 +13,13 @@
               "children": [
                 {
                   "name": "test_jkcombination_detailpage[搭销详情页整体数据]",
-                  "uid": "463a1b3291bff0b9",
+                  "uid": "678344ec7b5f2d34",
                   "parentUid": "deb479b24f5abf8820210b56c22e41c4",
                   "status": "passed",
                   "time": {
-                    "start": 1657009935507,
-                    "stop": 1657009936388,
-                    "duration": 881
+                    "start": 1658389336889,
+                    "stop": 1658389336990,
+                    "duration": 101
                   },
                   "flaky": false,
                   "newFailed": false,
@@ -28,7 +28,7 @@
                   "retriesCount": 0,
                   "retriesStatusChange": false,
                   "parameters": [
-                    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/combination/110865', 'detail': '搭销详情页整体数据', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/combination/102190', 'detail': '搭销详情页整体数据', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
                   ]
                 }
               ],
@@ -39,13 +39,13 @@
               "children": [
                 {
                   "name": "test_jkcombination_list[根据产品ID查询相关搭销]",
-                  "uid": "86e3c256e5aaa00e",
+                  "uid": "a19786522f03f369",
                   "parentUid": "d56c8ba4ded1fbb0c7e0ff08107d90e5",
                   "status": "passed",
                   "time": {
-                    "start": 1657009936393,
-                    "stop": 1657009936456,
-                    "duration": 63
+                    "start": 1658389336991,
+                    "stop": 1658389337023,
+                    "duration": 32
                   },
                   "flaky": false,
                   "newFailed": false,
@@ -54,7 +54,7 @@
                   "retriesCount": 0,
                   "retriesStatusChange": false,
                   "parameters": [
-                    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/combinations/13769', 'detail': '根据产品ID查询相关搭销', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': 'Flase', 'dependence_case_data': [{'case_id': 'combination_detailpage_01', 'dependent_data': 'response', 'jsonpath': '$.data.mainSkuCode', 'replace_key': '$.url'}], 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/combinations/11692', 'detail': '根据产品ID查询相关搭销', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': 'Flase', 'dependence_case_data': [{'case_id': 'combination_detailpage_01', 'dependent_data': 'response', 'jsonpath': '$.data.mainSkuCode', 'replace_key': '$.url'}], 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
                   ]
                 }
               ],
@@ -64,17 +64,43 @@
           "uid": "16a7a5d4359b41ce96f7d2be5938a85f"
         },
         {
+          "name": "JkDetailPage.test_jkdetailpage",
+          "children": [
+            {
+              "name": "test_jkdetailpage[搭配详情页数据]",
+              "uid": "1734a6bb7b88d8e1",
+              "parentUid": "65b2377d5283b05bfbc3a8bf41f097e8",
+              "status": "passed",
+              "time": {
+                "start": 1658389337025,
+                "stop": 1658389338672,
+                "duration": 1647
+              },
+              "flaky": false,
+              "newFailed": false,
+              "newPassed": false,
+              "newBroken": false,
+              "retriesCount": 0,
+              "retriesStatusChange": false,
+              "parameters": [
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/products/11692', 'detail': '搭配详情页数据', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+              ]
+            }
+          ],
+          "uid": "JkDetailPage.test_jkdetailpage"
+        },
+        {
           "name": "JkLogin.test_jklogin",
           "children": [
             {
               "name": "test_jklogin[正常登录]",
-              "uid": "4350f239e2bd33b5",
+              "uid": "90b1a5ef8a60b0b",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009936464,
-                "stop": 1657009936648,
-                "duration": 184
+                "start": 1658389338708,
+                "stop": 1658389338877,
+                "duration": 169
               },
               "flaky": false,
               "newFailed": false,
@@ -88,13 +114,13 @@
             },
             {
               "name": "test_jklogin[手机号错误]",
-              "uid": "adc908ec72c6489e",
+              "uid": "fc0fa1715f5e3576",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009936658,
-                "stop": 1657009936747,
-                "duration": 89
+                "start": 1658389338885,
+                "stop": 1658389338939,
+                "duration": 54
               },
               "flaky": false,
               "newFailed": false,
@@ -108,13 +134,13 @@
             },
             {
               "name": "test_jklogin[密码长度错误]",
-              "uid": "8633ad8846e3274b",
+              "uid": "d64170b227518106",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009936756,
-                "stop": 1657009936859,
-                "duration": 103
+                "start": 1658389338945,
+                "stop": 1658389338993,
+                "duration": 48
               },
               "flaky": false,
               "newFailed": false,
@@ -128,13 +154,13 @@
             },
             {
               "name": "test_jklogin[密码为空]",
-              "uid": "d858b34485810204",
+              "uid": "60f33134280702ae",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "failed",
               "time": {
-                "start": 1657009936868,
-                "stop": 1657009936925,
-                "duration": 57
+                "start": 1658389339011,
+                "stop": 1658389339125,
+                "duration": 114
               },
               "flaky": false,
               "newFailed": false,
@@ -143,18 +169,18 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '密码为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': ' ', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[密码不能为空] [密码长度为6-16个字符] ', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'POST', 'is_run': None, 'url': 'http://acgi.tst.jianke.com/passport/account/login/v2', 'detail': '密码为空', 'headers': {'Content-Type': 'application/json'}, 'requestType': 'JSON', 'data': {'loginName': '13330809542', 'password': ' ', 'platform': 3}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[密码长度为6-16个字符] [密码不能为空]', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             },
             {
               "name": "test_jklogin[05_登录失败_平台错误]",
-              "uid": "9b1e5b54f9a41e1a",
+              "uid": "99ced50864abcb45",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009937000,
-                "stop": 1657009937026,
-                "duration": 26
+                "start": 1658389339180,
+                "stop": 1658389339215,
+                "duration": 35
               },
               "flaky": false,
               "newFailed": false,
@@ -168,13 +194,13 @@
             },
             {
               "name": "test_jklogin[06_登录失败_平台为空]",
-              "uid": "d93355bb27bf49d2",
+              "uid": "fef225edd61f39f5",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009937028,
-                "stop": 1657009937056,
-                "duration": 28
+                "start": 1658389339217,
+                "stop": 1658389339249,
+                "duration": 32
               },
               "flaky": false,
               "newFailed": false,
@@ -188,13 +214,13 @@
             },
             {
               "name": "test_jklogin[06_登录失败_手机号为空]",
-              "uid": "c49fb4127a7fcfc8",
+              "uid": "83f146ff4290d95c",
               "parentUid": "ebb278449baa53e0784331c03892edd8",
               "status": "passed",
               "time": {
-                "start": 1657009937058,
-                "stop": 1657009937086,
-                "duration": 28
+                "start": 1658389339251,
+                "stop": 1658389339278,
+                "duration": 27
               },
               "flaky": false,
               "newFailed": false,
@@ -214,13 +240,13 @@
           "children": [
             {
               "name": "test_jkorders_list[查询订单列表_全部订单]",
-              "uid": "950f3c6479de12ef",
+              "uid": "374025cd88f9f44b",
               "parentUid": "a38c368b7f74492eb71917b53d3b8e7c",
               "status": "passed",
               "time": {
-                "start": 1657009937089,
-                "stop": 1657009938247,
-                "duration": 1158
+                "start": 1658389339285,
+                "stop": 1658389340835,
+                "duration": 1550
               },
               "flaky": false,
               "newFailed": false,
@@ -229,18 +255,18 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/orders', 'detail': '查询订单列表_全部订单', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'all', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_全部订单', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'all', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             },
             {
               "name": "test_jkorders_list[查询订单列表_待付款]",
-              "uid": "6ac7040034c789d7",
+              "uid": "e2021696ebbf20ca",
               "parentUid": "a38c368b7f74492eb71917b53d3b8e7c",
               "status": "passed",
               "time": {
-                "start": 1657009938259,
-                "stop": 1657009939165,
-                "duration": 906
+                "start": 1658389340840,
+                "stop": 1658389341126,
+                "duration": 286
               },
               "flaky": false,
               "newFailed": false,
@@ -249,18 +275,18 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/orders', 'detail': '查询订单列表_待付款', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitPay', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_待付款', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitPay', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             },
             {
               "name": "test_jkorders_list[查询订单列表_待发货]",
-              "uid": "5662a2ddbdc83a03",
+              "uid": "1efc27a8abd6aa43",
               "parentUid": "a38c368b7f74492eb71917b53d3b8e7c",
               "status": "passed",
               "time": {
-                "start": 1657009939173,
-                "stop": 1657009940393,
-                "duration": 1220
+                "start": 1658389341136,
+                "stop": 1658389341457,
+                "duration": 321
               },
               "flaky": false,
               "newFailed": false,
@@ -269,18 +295,18 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/orders', 'detail': '查询订单列表_待发货', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitDelivery', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_待发货', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitDelivery', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             },
             {
               "name": "test_jkorders_list[查询订单列表_待收货]",
-              "uid": "90135d3f27956710",
+              "uid": "ad6eb6168fb27c91",
               "parentUid": "a38c368b7f74492eb71917b53d3b8e7c",
               "status": "passed",
               "time": {
-                "start": 1657009940402,
-                "stop": 1657009941214,
-                "duration": 812
+                "start": 1658389341460,
+                "stop": 1658389341604,
+                "duration": 144
               },
               "flaky": false,
               "newFailed": false,
@@ -289,18 +315,18 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/orders', 'detail': '查询订单列表_待收货', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitReceiving', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_待收货', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitReceiving', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             },
             {
               "name": "test_jkorders_list[查询订单列表_待评价]",
-              "uid": "c4ad58c1fb41ee9",
+              "uid": "71b235423e6d01aa",
               "parentUid": "a38c368b7f74492eb71917b53d3b8e7c",
               "status": "passed",
               "time": {
-                "start": 1657009941222,
-                "stop": 1657009942244,
-                "duration": 1022
+                "start": 1658389341609,
+                "stop": 1658389342046,
+                "duration": 437
               },
               "flaky": false,
               "newFailed": false,
@@ -309,7 +335,7 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/orders', 'detail': '查询订单列表_待评价', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitEvaluate', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_待评价', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'waitEvaluate', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             }
           ],
@@ -320,13 +346,13 @@
           "children": [
             {
               "name": "test_jkflash[查询全局广告信息]",
-              "uid": "5d192537c52d80a",
+              "uid": "1bc84e3ce350c4b9",
               "parentUid": "10adc103bc2c18e286b74f38eb4ce0e0",
-              "status": "passed",
+              "status": "failed",
               "time": {
-                "start": 1657009942252,
-                "stop": 1657009944044,
-                "duration": 1792
+                "start": 1658389342054,
+                "stop": 1658389343192,
+                "duration": 1138
               },
               "flaky": false,
               "newFailed": false,
@@ -335,11 +361,269 @@
               "retriesCount": 0,
               "retriesStatusChange": false,
               "parameters": [
-                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.internal.jianke.com/v5/flash', 'detail': '查询全局广告信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'data': {'jsonpath': '$.data', 'type': 'contains', 'value': 'globalStyle', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/flash', 'detail': '查询全局广告信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'data': {'jsonpath': '$.data', 'type': 'contains', 'value': 'globalStyle', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
               ]
             }
           ],
           "uid": "JkPromos.test_jkflash"
+        },
+        {
+          "name": "JkSettle",
+          "children": [
+            {
+              "name": "test_jkrxRule_settings",
+              "children": [
+                {
+                  "name": "test_jkrxRule_settings[查询用药人校验包具体信息]",
+                  "uid": "1afb6d3ccfccb3bc",
+                  "parentUid": "07b16570d4a3602813d2be4203e78c6f",
+                  "status": "failed",
+                  "time": {
+                    "start": 1658389343214,
+                    "stop": 1658389343277,
+                    "duration": 63
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v4/rxRule/setting', 'detail': '查询用药人校验包具体信息', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 11692, 'port': 'app'}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                }
+              ],
+              "uid": "07b16570d4a3602813d2be4203e78c6f"
+            },
+            {
+              "name": "test_jksettle_settings",
+              "children": [
+                {
+                  "name": "test_jksettle_settings[发热商品--发热校验包70]",
+                  "uid": "e9838ed31b0313da",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343291,
+                    "stop": 1658389343336,
+                    "duration": 45
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '发热商品--发热校验包70', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 119, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[严管处方商品--严管校验包88]",
+                  "uid": "75efb3e34fc8970b",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343351,
+                    "stop": 1658389343410,
+                    "duration": 59
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方商品--严管校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 879207, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[普通处方商品--默认校验包34]",
+                  "uid": "46aff67d425e42e9",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343417,
+                    "stop": 1658389343491,
+                    "duration": 74
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '普通处方商品--默认校验包34', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 453232, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 34, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '默认校验包', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[高风险处方商品--药品处方类型（test）校验包87]",
+                  "uid": "87d53545f0f60a23",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343495,
+                    "stop": 1658389343560,
+                    "duration": 65
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '高风险处方商品--药品处方类型（test）校验包87', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 13770, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 87, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '药品处方类型（test）', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[发热药品 + 严管处方药 == 校验包88]",
+                  "uid": "7f3120dfc6df4c62",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343569,
+                    "stop": 1658389343625,
+                    "duration": 56
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '发热药品 + 严管处方药 == 校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '119,879207', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '不用实名-严管处方药1', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[发热药品 + 高风险处方药 == 校验包87]",
+                  "uid": "68fbd1d40382a4a7",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343630,
+                    "stop": 1658389343685,
+                    "duration": 55
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '发热药品 + 高风险处方药 == 校验包87', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '119,13770', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 87, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '药品处方类型（test）', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[普通处方药 + 高风险处方药 == 校验包87]",
+                  "uid": "91acec590c3451c1",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343692,
+                    "stop": 1658389343746,
+                    "duration": 54
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '普通处方药 + 高风险处方药 == 校验包87', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '453232,13770', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 87, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '药品处方类型（test）', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[发热药品 + 普通处方药 == 校验包70]",
+                  "uid": "5b5a271973bea4ac",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343759,
+                    "stop": 1658389343831,
+                    "duration": 72
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '发热药品 + 普通处方药 == 校验包70', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '119,453232', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 70, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '发热', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[严管处方药 + 高风险处方药 == 校验包88]",
+                  "uid": "2aa92e8e05945704",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343837,
+                    "stop": 1658389343904,
+                    "duration": 67
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方药 + 高风险处方药 == 校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '879207,13770', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '不用实名-严管处方药1', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[严管处方药 + 普通处方药 == 校验包88]",
+                  "uid": "5d9b5bdbd9134151",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343917,
+                    "stop": 1658389343979,
+                    "duration": 62
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方药 + 普通处方药 == 校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '879207,453232', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '不用实名-严管处方药1', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                },
+                {
+                  "name": "test_jksettle_settings[严管处方药 + 普通处方药 + 发热药品 + 高风险药品 == 校验包88]",
+                  "uid": "76cd138a449aac78",
+                  "parentUid": "08b367cbe4a292f310dd74de16718a4e",
+                  "status": "passed",
+                  "time": {
+                    "start": 1658389343986,
+                    "stop": 1658389344595,
+                    "duration": 609
+                  },
+                  "flaky": false,
+                  "newFailed": false,
+                  "newPassed": false,
+                  "newBroken": false,
+                  "retriesCount": 0,
+                  "retriesStatusChange": false,
+                  "parameters": [
+                    "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方药 + 普通处方药 + 发热药品 + 高风险药品 == 校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '879207,453232,119,13770', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '不用实名-严管处方药1', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+                  ]
+                }
+              ],
+              "uid": "08b367cbe4a292f310dd74de16718a4e"
+            }
+          ],
+          "uid": "aa9e35cc0e0ad698f67b266d3d41f420"
         }
       ],
       "uid": "3b2e467b921b0ea8d4803b9c79d92d0c"

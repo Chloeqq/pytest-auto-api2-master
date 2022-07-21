@@ -1,0 +1,13 @@
+INFO     /Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/logs/info_2022-07-21.log:logDecoratorl.py:36 
+=================================================================================
+测试标题: 根据产品ID查询相关搭销
+请求方式: GET
+请求头:   {'Content-Type': 'application/json', 'authorization': 'bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhZGRpdGlvbmFsSW5mb3JtYXRpb24iOnsiYWNjb3VudElkIjoiRTVBMjI4OTktMjkyQi00ODU0LTk1MkUtRTExQTkyREQwNTMwIiwibmlja25hbWUiOiJtZWludiIsImF2YXRhciI6Imh0dHBzOi8vaW1nLnRpYW5kaXRhby5jb20vbWFsbC92bWFsbC9pbmRleC8yMDIwMDYvZjA5N2ZjZTc4ZGE4NDBjZDk5Yjk4NWJjZWM5MmMzNWEucG5nIiwidGFnIjoiYSIsInVzZXJuYW1lIjoiRTVBMjI4OTktMjkyQi00ODU0LTk1MkUtRTExQTkyREQwNTMwIiwibG9naW5OYW1lIjoiMTQ1OTNDMTA3OUIwRTBERTgwNEUyNjM3RjNBNEMwMjIiLCJvcmdhbml6YXRpb25Db2RlIjoibS5qaWFua2UiLCJhdXRob3JpdGllcyI6W119LCJleHAiOjE2NTg2ODkzMzYsInVzZXJfbmFtZSI6IkU1QTIyODk5LTI5MkItNDg1NC05NTJFLUUxMUE5MkREMDUzMCIsImp0aSI6ImU5Y2Q0N2JiLTY2ZDItNGEwMy05Yzk2LTYzZmVmYzQwZTVkYiIsImNsaWVudF9pZCI6Im1hbGxfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.RxTTxfCWoVUnwHQXn4wybRSaEfmo0Guf_li4JVbT8UNHO9tyPujZQk0gkmDKU18u_qYf0MnRCDZybI76uU6Dp60AKO7dHwommjuT4J4UJUIrC9WSqcBgxvuUbyHkWXJreuZsDjDMAbfiFXeybz5aFAKx6FsNKWu7glnAyo6h31E', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '29355#3c2d47956b1726ad4ded4e3883125cbb#5669#641'}
+请求路径: http://fe-acgi-v2.tst.jianke.com/v5/combinations/11692
+请求内容: None
+依赖测试用例: 暂无依赖用例数据
+接口响应内容: {'data': [], 'statusCode': 200, 'success': True}
+接口响应时长: 27.369 ms
+Http状态码: 200
+数据库断言数据: {'sql': None}
+=================================================================================

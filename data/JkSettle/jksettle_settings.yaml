@@ -1,0 +1,485 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 结算模块
+  allureStory: 用药人校验包信息
+
+jk_settle_setting_01:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 发热商品--发热校验包70
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 119
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 1
+      AssertType:
+  sql:
+
+jk_settle_setting_02:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 严管处方商品--严管校验包88
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 879207
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 88
+      AssertType:
+  sql:
+
+jk_settle_setting_03:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 普通处方商品--默认校验包34
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 453232
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 34
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 默认校验包
+      AssertType:
+  sql:
+
+jk_settle_setting_04:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 高风险处方商品--药品处方类型（test）校验包87
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 13770
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 87
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 药品处方类型（test）
+      AssertType:
+  sql:
+
+jk_settle_setting_05:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 发热药品 + 严管处方药 == 校验包88
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 119,879207
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 1
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 88
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 不用实名-严管处方药1
+      AssertType:
+  sql:
+
+jk_settle_setting_06:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 发热药品 + 高风险处方药 == 校验包87
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 119,13770
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 1
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 87
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 药品处方类型（test）
+      AssertType:
+  sql:
+
+jk_settle_setting_07:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 普通处方药 + 高风险处方药 == 校验包87
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 453232,13770
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 87
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 药品处方类型（test）
+      AssertType:
+  sql:
+
+jk_settle_setting_08:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 发热药品 + 普通处方药 == 校验包70
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 119,453232
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 1
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 70
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 发热
+      AssertType:
+  sql:
+
+jk_settle_setting_09:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 严管处方药 + 高风险处方药 == 校验包88
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 879207,13770
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 88
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 不用实名-严管处方药1
+      AssertType:
+  sql:
+
+jk_settle_setting_10:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 严管处方药 + 普通处方药 == 校验包88
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 879207,453232
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 88
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 不用实名-严管处方药1
+      AssertType:
+  sql:
+
+jk_settle_setting_11:
+  host: ${{jk_java_host2}}
+  url: /svc/settings/productCodes
+  method: GET
+  detail: 严管处方药 + 普通处方药 + 发热药品 + 高风险药品 == 校验包88
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、date
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    productCodes: 879207,453232,119,13770
+    port: app
+    userType: newuser
+    drugRange: 2
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    isMatchFever:
+      jsonpath: $.isMatchFever
+      type: ==
+      value: 1
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 88
+      AssertType:
+    packageName:
+      jsonpath: $.packageName
+      type: ==
+      value: 不用实名-严管处方药1
+      AssertType:
+  sql:
