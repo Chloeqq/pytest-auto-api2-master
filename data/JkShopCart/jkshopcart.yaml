@@ -1,0 +1,36 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 购物车模块
+  allureStory: 购物车列表
+
+jk_shop_cart_01:
+  host: ${{jk_app_host}}
+  url: /v5/cartsettle
+  method: GET
+  detail: 查询购物车列表
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    success:
+      jsonpath: $.success
+      type: ==
+      value: true
+      AssertType:
+  sql:

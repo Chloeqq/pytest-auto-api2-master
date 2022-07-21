@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022-06-21 19:26:38
+# @Time   : 2022-07-21 16:16:05
 # @Author : BettyHuang
 
 
@@ -14,26 +14,26 @@ from utils.readFilesUtils.regularControl import regular
 from utils.requestsUtils.requestControl import RequestControl
 from utils.requestsUtils.teardownControl import TearDownHandler
 
-TestData = CaseData(ConfigHandler.data_path + r'JkCombination/jkcombination_detailpage.yaml').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'JkShopCart/jkshopcart.yaml').case_process()
 re_data = regular(str(TestData))
 
 
 @allure.epic("开发平台接口")
-@allure.feature("搭销模块")
-class TestJkcombinationDetailpage:
+@allure.feature("购物车模块")
+class TestJkshopcart:
 
-    @allure.story("搭销详情页")
+    @allure.story("购物车列表")
     @pytest.mark.parametrize('in_data', eval(re_data), ids=[i['detail'] for i in TestData])
-    def test_jkcombination_detailpage(self, in_data, case_skip):
+    def test_jkshopcart(self, in_data, case_skip):
         """
         :param :
         :return:
         """
         res = RequestControl().http_request(in_data)
         TearDownHandler().teardown_handle(res)
-        Assert(in_data['assert']).assert_equality(response_data=res['response_data'], 
+        Assert(in_data['assert']).assert_equality(response_data=res['response_data'],
                                                   sql_data=res['sql_data'], status_code=res['status_code'])
 
 
 if __name__ == '__main__':
-    pytest.main(['test_jkcombination_detailpage.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
+    pytest.main(['test_jkshopcart.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])

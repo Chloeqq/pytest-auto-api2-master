@@ -128,6 +128,17 @@ class Context:
         return host
 
     @property
+    def jk_java_host2(self) -> str:
+        """获取app的host"""
+        from utils.readFilesUtils.yamlControl import GetYamlData
+        from common.setting import ConfigHandler
+
+        # 从配置文件conf.yaml 文件中获取到域名，然后使用正则替换
+        host = GetYamlData(ConfigHandler.config_path) \
+            .get_yaml_data()['jk_java_host2']
+        return host
+
+    @property
     def platform(self) -> str:
         """获取接口请求平台"""
         from utils.readFilesUtils.yamlControl import GetYamlData

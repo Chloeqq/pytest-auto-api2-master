@@ -47,7 +47,7 @@ class CaseData:
 
                 if case_id_switch is True:
                     case_lists.append({key: case_date})
-                    print(case_lists)
+                    # print(case_lists)
                 else:
                     # 正则处理，如果用例中有需要读取缓存中的数据，则优先读取缓存
 

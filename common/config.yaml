@@ -9,9 +9,12 @@ TesterName: BettyHuang
 # 域名1
 host: https://www.wanandroid.com
 # 域名2，聚合接口 tst:测试环境  dev: 开发环境  internal：线上环境
-jk_app_host: http://fe-acgi-v2.internal.jianke.com
+jk_app_host: http://fe-acgi-v2.tst.jianke.com
 # 直接请求后端，不用聚合的接口
 jk_java_host: http://acgi.tst.jianke.com
+# 域名3，java后端
+jk_java_host2: http://setting-service.tst.jianke.com
+
 
 # 平台：
 platform: app

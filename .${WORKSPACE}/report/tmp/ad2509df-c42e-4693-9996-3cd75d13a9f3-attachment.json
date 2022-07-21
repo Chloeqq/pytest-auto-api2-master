@@ -1,1 +1,0 @@
-"{'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}"
