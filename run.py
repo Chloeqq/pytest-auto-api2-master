@@ -29,7 +29,7 @@ def run():
         TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
-                     '--alluredir', './report/tmp',
+                     '--alluredir', '/var/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp',
                      "--clean-alluredir"])
         """
                    --reruns: 失败重跑次数
@@ -44,8 +44,8 @@ def run():
                    """
 
         os.system(
-            r"allure generate ./report/tmp "
-            r"-o ./report/html --clean")
+            r"allure generate /var/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp "
+            r"-o /var/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
         # 判断通知类型，根据配置发送不同的报告通知
         if get_notification_type() == NotificationType.DEFAULT.value:
             pass
@@ -61,9 +61,9 @@ def run():
             FeiShuTalkChatBot().post()
         else:
             raise ValueError("通知类型配置错误，暂不支持该类型通知")
-        # os.system(
-        #     r"allure serve ./report/tmp "
-        #     r"-h 127.0.0.1 -p 9797")
+        os.system(
+            r"allure serve ./report/tmp "
+            r"-h 127.0.0.1 -p 9797")
 
     except Exception:
         # 如有异常，相关异常发送邮件
