@@ -62,7 +62,7 @@ def run():
         else:
             raise ValueError("通知类型配置错误，暂不支持该类型通知")
         os.system(
-            r"allure serve ./report/tmp "
+            r"allure serve /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp "
             r"-h 127.0.0.1 -p 9797")
 
     except Exception:
