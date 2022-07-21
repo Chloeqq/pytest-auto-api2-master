@@ -1,8 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time   : 2022/3/29 15:01
-# @Author : 余少琪
-
 import os
 import traceback
 
@@ -34,7 +29,7 @@ def run():
         TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
-                     '--alluredir', './Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp',
+                     '--alluredir', '${WORKSPACE}/report/tmp',
                      "--clean-alluredir"])
         """
                    --reruns: 失败重跑次数
@@ -49,8 +44,8 @@ def run():
                    """
 
         os.system(
-            r"allure generate ./Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp "
-            r"-o ./Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
+            r"allure generate ${WORKSPACE}/report/tmp "
+            r"-o ${WORKSPACE}/report/html --clean")
         # 判断通知类型，根据配置发送不同的报告通知
         if get_notification_type() == NotificationType.DEFAULT.value:
             pass
