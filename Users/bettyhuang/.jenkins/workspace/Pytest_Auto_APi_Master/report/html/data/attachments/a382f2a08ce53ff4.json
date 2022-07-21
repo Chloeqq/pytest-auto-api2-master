@@ -1,1 +1,0 @@
-"{'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '不用实名-严管处方药1', 'AssertType': None}}"

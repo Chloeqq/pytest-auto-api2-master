@@ -1,1 +1,0 @@
-"{'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000003', 'AssertType': None}}"
