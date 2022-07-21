@@ -26,10 +26,10 @@ versionname: 6.4.1
 versionCode: 641
 
 # 报告通知类型：0: 不发送通知 1：钉钉 2：企业微信通知 3、邮箱通知 4、飞书通知
-NotificationType: 2
+NotificationType: 0
 
 # 收集失败的用例开关，整理成excel报告的形式，自动发送，目前只支持返送企业微信通知
-excel_report: False
+excel_report: True
 
 # 注意点：
 # 之前为了小伙伴们拉下代码执行的时候不受影响，企业微信、钉钉、邮箱的通知配置的都是我的
@@ -58,11 +58,11 @@ WeChat:
 
 # 邮箱通知的相关配置
 email:
-  send_user: 1603453211@qq.com
+  send_user: 764504389@qq.com
   email_host: smtp.qq.com
   stamp_key: rzuabbobadbuhadc
   # 收件人
-  send_list: 1603453211@qq.com
+  send_list: 764504389@qq.com
 
 # 飞书通知
 FeiShuTalk:
