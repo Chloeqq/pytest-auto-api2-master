@@ -1,0 +1,155 @@
+{
+  "name": "test_jksettle_settings[严管处方商品--严管校验包88]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://setting-service.tst.jianke.com/svc/settings/productCodes",
+      "status": "passed",
+      "start": 1658389343393,
+      "stop": 1658389343393
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1658389343393,
+      "stop": 1658389343393
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "3870f7a0-5913-4121-b1f5-603e34fe06f2-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343393,
+      "stop": 1658389343394
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "5bde5fda-230f-4d95-a712-611e43e23192-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343394,
+      "stop": 1658389343394
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "2fcb4a31-5723-4062-969a-2058a068d9c7-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343394,
+      "stop": 1658389343395
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "cec611a2-d4e7-4e8d-89c3-34c95a079403-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343395,
+      "stop": 1658389343395
+    },
+    {
+      "name": "响应耗时(s): 38.693",
+      "status": "passed",
+      "start": 1658389343395,
+      "stop": 1658389343395
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "a9da38d3-ed23-403e-b9d6-3eb2e37811cb-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343395,
+      "stop": 1658389343403
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "ef8d9e92-bdb3-48cb-9c24-2ccb700e49ea-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '严管处方商品--严管校验包88', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': 879207, 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 0, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 88, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389343351,
+  "stop": 1658389343410,
+  "uuid": "9e1fd0e1-2a26-41e0-b1d4-376f1aeea395",
+  "historyId": "c8b87a51e549a5569fdc0151251f9f2f",
+  "testCaseId": "368bf4d26b46093b9becf9d53c80ebb6",
+  "fullName": "test_case.JkSettle.test_jksettle_settings.TestJksettleSettings#test_jksettle_settings",
+  "labels": [
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "story",
+      "value": "结算页用药人信息"
+    },
+    {
+      "name": "feature",
+      "value": "结算模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkSettle"
+    },
+    {
+      "name": "suite",
+      "value": "test_jksettle_settings"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJksettleSettings"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkSettle.test_jksettle_settings"
+    }
+  ]
+}

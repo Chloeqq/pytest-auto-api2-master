@@ -1,0 +1,155 @@
+{
+  "name": "test_jkcombination_list[根据产品ID查询相关搭销]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://fe-acgi-v2.tst.jianke.com/v5/combinations/11692",
+      "status": "passed",
+      "start": 1658389337021,
+      "stop": 1658389337021
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1658389337021,
+      "stop": 1658389337021
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "fc55e275-4af2-4f09-8c82-1b3ba9e567af-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389337021,
+      "stop": 1658389337022
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "46e3a263-c795-4b68-b8cb-6f12eb573a30-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389337022,
+      "stop": 1658389337022
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "a2824332-3511-416b-8bc3-ccbacc927403-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389337022,
+      "stop": 1658389337022
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "6900ae0c-c701-45ca-84f9-4d7199e89a92-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389337022,
+      "stop": 1658389337022
+    },
+    {
+      "name": "响应耗时(s): 27.369",
+      "status": "passed",
+      "start": 1658389337022,
+      "stop": 1658389337022
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "8c982ba9-9d5c-4883-a432-317e3f6846c4-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389337022,
+      "stop": 1658389337022
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "9759db63-9c2b-4826-81cb-72af62ed3cd2-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/combinations/11692', 'detail': '根据产品ID查询相关搭销', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'JSON', 'data': None, 'dependence_case': 'Flase', 'dependence_case_data': [{'case_id': 'combination_detailpage_01', 'dependent_data': 'response', 'jsonpath': '$.data.mainSkuCode', 'replace_key': '$.url'}], 'current_request_set_cache': None, 'sql': None, 'assert': {'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389336991,
+  "stop": 1658389337023,
+  "uuid": "40ad6842-5fb5-4721-8c4f-1ac8c284cddc",
+  "historyId": "8e7e2f0bd451deee5d3e87dc0bc0247f",
+  "testCaseId": "95d68a5db2394ce6554a8f7cbdf99a85",
+  "fullName": "test_case.JkCombination.test_jkcombination_list.TestJkcombinationList#test_jkcombination_list",
+  "labels": [
+    {
+      "name": "feature",
+      "value": "搭销组合模块"
+    },
+    {
+      "name": "story",
+      "value": "搭销组合列表"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkCombination"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkcombination_list"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkcombinationList"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkCombination.test_jkcombination_list"
+    }
+  ]
+}

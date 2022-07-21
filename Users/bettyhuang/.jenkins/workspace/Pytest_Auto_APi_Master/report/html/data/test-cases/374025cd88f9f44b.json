@@ -1,0 +1,360 @@
+{
+  "uid": "374025cd88f9f44b",
+  "name": "test_jkorders_list[查询订单列表_全部订单]",
+  "fullName": "test_case.JkOrders.test_jkorders_list.TestJkordersList#test_jkorders_list",
+  "historyId": "396ea7c90d58c453dec4747bed71d647",
+  "time": {
+    "start": 1658389339285,
+    "stop": 1658389340835,
+    "duration": 1550
+  },
+  "description": "\n        :param :\n        :return:\n        ",
+  "descriptionHtml": "<pre><code>    :param :\n    :return:\n</code></pre>\n",
+  "status": "passed",
+  "flaky": false,
+  "newFailed": false,
+  "newBroken": false,
+  "newPassed": false,
+  "retriesCount": 0,
+  "retriesStatusChange": false,
+  "beforeStages": [
+    {
+      "name": "_session_faker",
+      "time": {
+        "start": 1658389336677,
+        "stop": 1658389336691,
+        "duration": 14
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "get_x_jk_x",
+      "time": {
+        "start": 1658389336691,
+        "stop": 1658389336695,
+        "duration": 4
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "work_login_init",
+      "time": {
+        "start": 1658389336695,
+        "stop": 1658389336832,
+        "duration": 137
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "write_case_process",
+      "time": {
+        "start": 1658389336832,
+        "stop": 1658389336889,
+        "duration": 57
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    },
+    {
+      "name": "case_skip",
+      "time": {
+        "start": 1658389339285,
+        "stop": 1658389339285,
+        "duration": 0
+      },
+      "status": "passed",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "stepsCount": 0,
+      "attachmentsCount": 0,
+      "shouldDisplayMessage": false,
+      "hasContent": false
+    }
+  ],
+  "testStage": {
+    "description": "\n        :param :\n        :return:\n        ",
+    "status": "passed",
+    "steps": [
+      {
+        "name": "请求URL: http://fe-acgi-v2.tst.jianke.com/v5/orders",
+        "time": {
+          "start": 1658389340804,
+          "stop": 1658389340804,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求方式: GET",
+        "time": {
+          "start": 1658389340807,
+          "stop": 1658389340808,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "请求头: ",
+        "time": {
+          "start": 1658389340808,
+          "stop": 1658389340810,
+          "duration": 2
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "79e7dc2f923a91af",
+            "name": "请求头: ",
+            "source": "79e7dc2f923a91af.json",
+            "type": "application/json",
+            "size": 1104
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "请求数据: ",
+        "time": {
+          "start": 1658389340810,
+          "stop": 1658389340811,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "60f11e8296d142ce",
+            "name": "请求数据: ",
+            "source": "60f11e8296d142ce.json",
+            "type": "application/json",
+            "size": 40
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "依赖数据: ",
+        "time": {
+          "start": 1658389340811,
+          "stop": 1658389340811,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "513f5e3cc2e3571a",
+            "name": "依赖数据: ",
+            "source": "513f5e3cc2e3571a.json",
+            "type": "application/json",
+            "size": 32
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "预期数据: ",
+        "time": {
+          "start": 1658389340811,
+          "stop": 1658389340811,
+          "duration": 0
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "2cbcc7aaa076982e",
+            "name": "预期数据: ",
+            "source": "2cbcc7aaa076982e.json",
+            "type": "application/json",
+            "size": 109
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      },
+      {
+        "name": "响应耗时(s): 1508.124",
+        "time": {
+          "start": 1658389340811,
+          "stop": 1658389340812,
+          "duration": 1
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 0,
+        "shouldDisplayMessage": false,
+        "hasContent": false
+      },
+      {
+        "name": "响应结果: ",
+        "time": {
+          "start": 1658389340816,
+          "stop": 1658389340818,
+          "duration": 2
+        },
+        "status": "passed",
+        "steps": [],
+        "attachments": [
+          {
+            "uid": "efb2cb1b4b9ca7b",
+            "name": "响应结果: ",
+            "source": "efb2cb1b4b9ca7b.json",
+            "type": "application/json",
+            "size": 29967
+          }
+        ],
+        "parameters": [],
+        "stepsCount": 0,
+        "attachmentsCount": 1,
+        "shouldDisplayMessage": false,
+        "hasContent": true
+      }
+    ],
+    "attachments": [
+      {
+        "uid": "a24633909574b35f",
+        "name": "log",
+        "source": "a24633909574b35f.txt",
+        "type": "text/plain",
+        "size": 31692
+      }
+    ],
+    "parameters": [],
+    "stepsCount": 8,
+    "attachmentsCount": 6,
+    "shouldDisplayMessage": false,
+    "hasContent": true
+  },
+  "afterStages": [],
+  "labels": [
+    {
+      "name": "story",
+      "value": "订单列表"
+    },
+    {
+      "name": "feature",
+      "value": "订单模块"
+    },
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkOrders"
+    },
+    {
+      "name": "suite",
+      "value": "test_jkorders_list"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJkordersList"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkOrders.test_jkorders_list"
+    },
+    {
+      "name": "resultFormat",
+      "value": "allure2"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_全部订单', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'all', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "links": [],
+  "hidden": false,
+  "retry": false,
+  "extra": {
+    "severity": "normal",
+    "retries": [],
+    "categories": [],
+    "tags": []
+  },
+  "source": "374025cd88f9f44b.json",
+  "parameterValues": [
+    "{'method': 'GET', 'is_run': None, 'url': 'http://fe-acgi-v2.tst.jianke.com/v5/orders', 'detail': '查询订单列表_全部订单', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'type': 'all', 'page': 1, 'size': 10}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'success': {'jsonpath': '$.success', 'type': '==', 'value': True, 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "name": "test_jksettle_settings[发热药品 + 高风险处方药 == 校验包87]",
+  "status": "passed",
+  "description": "\n        :param :\n        :return:\n        ",
+  "steps": [
+    {
+      "name": "请求URL: http://setting-service.tst.jianke.com/svc/settings/productCodes",
+      "status": "passed",
+      "start": 1658389343677,
+      "stop": 1658389343677
+    },
+    {
+      "name": "请求方式: GET",
+      "status": "passed",
+      "start": 1658389343677,
+      "stop": 1658389343677
+    },
+    {
+      "name": "请求头: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求头: ",
+          "source": "670be51b-8d5b-4beb-ba11-d188398ca1b3-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343677,
+      "stop": 1658389343678
+    },
+    {
+      "name": "请求数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "请求数据: ",
+          "source": "b76a2bf3-5b63-4129-9339-26d4a681dc8f-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343678,
+      "stop": 1658389343679
+    },
+    {
+      "name": "依赖数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "依赖数据: ",
+          "source": "a02020af-fb38-48ab-a039-56afd5fd6c56-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343679,
+      "stop": 1658389343679
+    },
+    {
+      "name": "预期数据: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "预期数据: ",
+          "source": "0f8aef63-a3f4-454d-98e6-3a6ef6f8ee62-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343679,
+      "stop": 1658389343679
+    },
+    {
+      "name": "响应耗时(s): 34.276",
+      "status": "passed",
+      "start": 1658389343680,
+      "stop": 1658389343680
+    },
+    {
+      "name": "响应结果: ",
+      "status": "passed",
+      "attachments": [
+        {
+          "name": "响应结果: ",
+          "source": "bfea61f1-f287-425d-b383-e21d3b10755d-attachment.json",
+          "type": "application/json"
+        }
+      ],
+      "start": 1658389343680,
+      "stop": 1658389343681
+    }
+  ],
+  "attachments": [
+    {
+      "name": "log",
+      "source": "301c814d-80c0-4798-9611-5dac54890858-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [
+    {
+      "name": "in_data",
+      "value": "{'method': 'GET', 'is_run': None, 'url': 'http://setting-service.tst.jianke.com/svc/settings/productCodes', 'detail': '发热药品 + 高风险处方药 == 校验包87', 'headers': {'Content-Type': 'application/json', 'authorization': '$cache{token}', 'platform': 'app', 'x-jk-udid': 'BB1A9D8E-F469-4E1A-88E4-E2BA4B570038', 'versionname': '6.4.1', 'x-jk-x': '$cache{x_jk_x}'}, 'requestType': 'PARAMS', 'data': {'productCodes': '119,13770', 'port': 'app', 'userType': 'newuser', 'drugRange': 2}, 'dependence_case': False, 'dependence_case_data': {'dependence_case_data': None}, 'current_request_set_cache': None, 'sql': None, 'assert': {'status_code': 200, 'isMatchFever': {'jsonpath': '$.isMatchFever', 'type': '==', 'value': 1, 'AssertType': None}, 'id': {'jsonpath': '$.id', 'type': '==', 'value': 87, 'AssertType': None}, 'packageName': {'jsonpath': '$.packageName', 'type': '==', 'value': '药品处方类型（test）', 'AssertType': None}}, 'setup_sql': None, 'teardown': None, 'teardown_sql': None}"
+    }
+  ],
+  "start": 1658389343630,
+  "stop": 1658389343685,
+  "uuid": "e8b9841c-a2a3-4373-b158-577dd21393be",
+  "historyId": "04552c2094dd4f78ece3d56d65d4fff4",
+  "testCaseId": "368bf4d26b46093b9becf9d53c80ebb6",
+  "fullName": "test_case.JkSettle.test_jksettle_settings.TestJksettleSettings#test_jksettle_settings",
+  "labels": [
+    {
+      "name": "epic",
+      "value": "开发平台接口"
+    },
+    {
+      "name": "story",
+      "value": "结算页用药人信息"
+    },
+    {
+      "name": "feature",
+      "value": "结算模块"
+    },
+    {
+      "name": "parentSuite",
+      "value": "test_case.JkSettle"
+    },
+    {
+      "name": "suite",
+      "value": "test_jksettle_settings"
+    },
+    {
+      "name": "subSuite",
+      "value": "TestJksettleSettings"
+    },
+    {
+      "name": "host",
+      "value": "Bettys-MacBook-Pro.local"
+    },
+    {
+      "name": "thread",
+      "value": "36618-MainThread"
+    },
+    {
+      "name": "framework",
+      "value": "pytest"
+    },
+    {
+      "name": "language",
+      "value": "cpython3"
+    },
+    {
+      "name": "package",
+      "value": "test_case.JkSettle.test_jksettle_settings"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"{'status_code': 400, 'code': {'jsonpath': '$.code', 'type': '==', 'value': '000002', 'AssertType': None}, 'message': {'jsonpath': '$.message', 'type': '==', 'value': '[用户名不能为空] ', 'AssertType': None}}"

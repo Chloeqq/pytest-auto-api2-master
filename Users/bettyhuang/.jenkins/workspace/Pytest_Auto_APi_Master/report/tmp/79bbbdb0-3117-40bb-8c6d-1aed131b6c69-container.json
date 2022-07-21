@@ -1,0 +1,16 @@
+{
+  "uuid": "0de63d4d-d85b-47b9-bd32-3c37ac524098",
+  "children": [
+    "6bcd43b6-8615-4208-8340-ce9f41ee959c"
+  ],
+  "befores": [
+    {
+      "name": "case_skip",
+      "status": "passed",
+      "start": 1658389343691,
+      "stop": 1658389343691
+    }
+  ],
+  "start": 1658389343691,
+  "stop": 1658389343750
+}
