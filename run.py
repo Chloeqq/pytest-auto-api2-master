@@ -25,11 +25,11 @@ def run():
                   开始执行{}项目...
                 """.format(project_name)
         )
-        # 判断现有的测试用例，如果未生成测试代码，则自动生成
+        # 判断现有的测试用例，如果未生成测试代码，则自动生成pwd
         TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
-                     '--alluredir', '/var/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp',
+                     '--alluredir', '/Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp',
                      "--clean-alluredir"])
         """
                    --reruns: 失败重跑次数
@@ -44,8 +44,8 @@ def run():
                    """
 
         os.system(
-            r"allure generate /var/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp "
-            r"-o /var/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
+            r"allure generate /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp "
+            r"-o /Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/html --clean")
         # 判断通知类型，根据配置发送不同的报告通知
         if get_notification_type() == NotificationType.DEFAULT.value:
             pass
