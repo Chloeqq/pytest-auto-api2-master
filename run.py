@@ -29,7 +29,7 @@ def run():
         TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
-                     '--alluredir', '${WORKSPACE}/report/tmp',
+                     '--alluredir', './report/tmp',
                      "--clean-alluredir"])
         """
                    --reruns: 失败重跑次数
@@ -44,8 +44,8 @@ def run():
                    """
 
         os.system(
-            r"allure generate ${WORKSPACE}/report/tmp "
-            r"-o ${WORKSPACE}/report/html --clean")
+            r"allure generate ./report/tmp "
+            r"-o /report/html --clean")
         # 判断通知类型，根据配置发送不同的报告通知
         if get_notification_type() == NotificationType.DEFAULT.value:
             pass
@@ -62,7 +62,7 @@ def run():
         else:
             raise ValueError("通知类型配置错误，暂不支持该类型通知")
         os.system(
-            r"allure serve ${WORKSPACE}/report/tmp "
+            r"allure serve ./report/tmp "
             r"-h 127.0.0.1 -p 9797")
 
     except Exception:
