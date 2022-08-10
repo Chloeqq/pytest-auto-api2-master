@@ -1,0 +1,95 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 收藏模块
+  allureStory: 我的收藏页面
+
+jk_my_favourite_01:
+  host: ${{jk_app_host2}}
+  url: /v5/member/favorites
+  method: GET
+  detail: 我的收藏-查询列表
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    success:
+      jsonpath: $.success
+      type: ==
+      value: true
+      AssertType:
+  sql:
+
+jk_my_favourite_02:
+  host: ${{jk_java_host}}
+  url: /details/api/app/favourites/${{productCode}}
+  method: POST
+  detail: 添加我的收藏
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+  sql:
+
+
+jk_my_favourite_03:
+  host: ${{jk_java_host}}
+  url: /v2/users/myFavorites
+  method: DELETE
+  detail: 取消我的收藏
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    ids: $cache{jk_my_favourite_02_favouriteId}
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id: jk_my_favourite_02
+      dependent_data:
+        - dependent_type: response
+          jsonpath: $.favoriteId
+          set_cache: jk_my_favourite_02_favouriteId
+  assert:
+    # 断言接口状态码
+    status_code: 200
+  sql:

@@ -96,13 +96,13 @@ class Context:
         return numbers
 
     @property
-    def host(self) -> str:
+    def jk_app_host2(self) -> str:
         from utils.readFilesUtils.yamlControl import GetYamlData
         from common.setting import ConfigHandler
 
         # 从配置文件conf.yaml 文件中获取到域名，然后使用正则替换
         host = GetYamlData(ConfigHandler.config_path) \
-            .get_yaml_data()['host']
+            .get_yaml_data()['jk_app_host2']
         return host
 
     @property

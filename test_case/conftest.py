@@ -69,9 +69,9 @@ def work_login_init():
     获取登录的cookie
     :return:
     """
-    url = "http://acgi.tst.jianke.com/passport/account/login/v2"
+    url = "http://acgi.internal.jianke.com/passport/account/login/v2"
     data = json.dumps({
-        "loginName": 15557188338,  # 15557188338
+        "loginName": 13544529580,  # 15557188338
         "password": 123456,
         "platform": 3
     })

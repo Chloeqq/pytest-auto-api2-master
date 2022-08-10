@@ -8,8 +8,9 @@
 
 import datetime
 import os
-from utils.readFilesUtils.yamlControl import GetYamlData
+
 from common.setting import ConfigHandler
+from utils.readFilesUtils.yamlControl import GetYamlData
 
 
 def write_case(case_path, page):
@@ -38,8 +39,7 @@ def write_testcase_file(allure_epic, allure_feature, class_title,
 
     page = f'''#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : {now}
-# @Author : {author}
+
 
 
 import allure

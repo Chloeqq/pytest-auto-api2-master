@@ -21,7 +21,7 @@ jk_login_01:
     # 是否执行，空或者 true 都会执行
     is_run:
     data:
-      loginName: '13330809542'
+      loginName: '13544529580'
       password: '123456'
       platform: 3
       # 是否有依赖业务，为空或者false则表示没有
@@ -129,7 +129,7 @@ jk_login_04:
       message:
         jsonpath: $.message
         type: ==
-        value: '[密码长度为6-16个字符] [密码不能为空]'
+        value: '[密码长度为6-16个字符] [密码不能为空] '
         AssertType:
     sql:
 

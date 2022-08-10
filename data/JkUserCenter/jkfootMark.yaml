@@ -1,0 +1,75 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 个人中心模块
+  allureStory: 浏览记录-我的足迹
+
+jk_foot_mark_01:
+  host: ${{jk_app_host2}}
+  url: /v5/member/footMark/products
+  method: GET
+  detail: 我的足迹-查询列表
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: json
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+  # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: False
+  # 依赖的数据
+  dependence_case_data:
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    success:
+      jsonpath: $.success
+      type: ==
+      value: true
+      AssertType:
+  sql:
+
+
+jk_foot_mark_02:
+  host: ${{jk_app_host2}}
+  url: /v5/member/footMark/products
+  method: DELETE
+  detail: 删除某个商品的浏览记录
+  headers:
+    Content-Type: application/json
+    authorization: $cache{token}
+    platform: ${{platform}}
+    x-jk-udid: ${{x_jk_udid}}
+    versionname: ${{versionname}}
+    x-jk-x: $cache{x_jk_x}
+  # 请求的数据，是 params 还是 json、或者file、data
+  requestType: params
+  # 是否执行，空或者 true 都会执行
+  is_run:
+  data:
+    ids: $cache{jk_foot_mark_02_id}
+    # 是否有依赖业务，为空或者false则表示没有
+  dependence_case: True
+  # 依赖的数据
+  dependence_case_data:
+    - case_id: jk_foot_mark_01
+      dependent_data:
+        - dependent_type: response
+          jsonpath: $.data[0].id
+          set_cache: jk_foot_mark_02_id
+          #replace_key: $.data.ids
+  assert:
+    # 断言接口状态码
+    status_code: 200
+    success:
+      jsonpath: $.success
+      type: ==
+      value: true
+      AssertType:
+  sql:

@@ -4,10 +4,10 @@ case_common:
   allureStory: 用药人信息
 
 jk_rxRule_setting_01:
-  host: ${{jk_app_host}}
+  host: ${{jk_app_host2}}
   url: /v4/rxRule/setting
   method: GET
-  detail: 查询用药人校验包具体信息
+  detail: 可售处方药校验包
   headers:
     Content-Type: application/json
     authorization: $cache{token}
@@ -20,7 +20,7 @@ jk_rxRule_setting_01:
   # 是否执行，空或者 true 都会执行
   is_run:
   data:
-    productCodes: 11692
+    productCodes: 86996
     port: app
     # 是否有依赖业务，为空或者false则表示没有
   dependence_case: False
@@ -33,6 +33,11 @@ jk_rxRule_setting_01:
       jsonpath: $.isMatchFever
       type: ==
       value: 0
+      AssertType:
+    id:
+      jsonpath: $.id
+      type: ==
+      value: 19
       AssertType:
   sql:
 

@@ -5,10 +5,10 @@ case_common:
   allureStory: 用药人校验包信息
 
 jk_settle_setting_01:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
-  detail: 发热商品--发热校验包70
+  detail: 严管处方药—新用户-42
   headers:
     Content-Type: application/json
     authorization: $cache{token}
@@ -21,7 +21,7 @@ jk_settle_setting_01:
   # 是否执行，空或者 true 都会执行
   is_run:
   data:
-    productCodes: 119
+    productCodes: 866637
     port: app
     userType: newuser
     drugRange: 2
@@ -35,15 +35,15 @@ jk_settle_setting_01:
     isMatchFever:
       jsonpath: $.isMatchFever
       type: ==
-      value: 1
+      value: 0
       AssertType:
   sql:
 
 jk_settle_setting_02:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
-  detail: 严管处方商品--严管校验包88
+  detail: 严管处方商品--严管校验包41
   headers:
     Content-Type: application/json
     authorization: $cache{token}
@@ -56,7 +56,7 @@ jk_settle_setting_02:
   # 是否执行，空或者 true 都会执行
   is_run:
   data:
-    productCodes: 879207
+    productCodes: 866637
     port: app
     userType: newuser
     drugRange: 2
@@ -80,7 +80,7 @@ jk_settle_setting_02:
   sql:
 
 jk_settle_setting_03:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 普通处方商品--默认校验包34
@@ -96,7 +96,7 @@ jk_settle_setting_03:
   # 是否执行，空或者 true 都会执行
   is_run:
   data:
-    productCodes: 453232
+    productCodes: 865692
     port: app
     userType: newuser
     drugRange: 2
@@ -125,7 +125,7 @@ jk_settle_setting_03:
   sql:
 
 jk_settle_setting_04:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 高风险处方商品--药品处方类型（test）校验包87
@@ -170,7 +170,7 @@ jk_settle_setting_04:
   sql:
 
 jk_settle_setting_05:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 发热药品 + 严管处方药 == 校验包88
@@ -215,7 +215,7 @@ jk_settle_setting_05:
   sql:
 
 jk_settle_setting_06:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 发热药品 + 高风险处方药 == 校验包87
@@ -260,7 +260,7 @@ jk_settle_setting_06:
   sql:
 
 jk_settle_setting_07:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 普通处方药 + 高风险处方药 == 校验包87
@@ -305,7 +305,7 @@ jk_settle_setting_07:
   sql:
 
 jk_settle_setting_08:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 发热药品 + 普通处方药 == 校验包70
@@ -350,7 +350,7 @@ jk_settle_setting_08:
   sql:
 
 jk_settle_setting_09:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 严管处方药 + 高风险处方药 == 校验包88
@@ -395,7 +395,7 @@ jk_settle_setting_09:
   sql:
 
 jk_settle_setting_10:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 严管处方药 + 普通处方药 == 校验包88
@@ -440,7 +440,7 @@ jk_settle_setting_10:
   sql:
 
 jk_settle_setting_11:
-  host: ${{jk_java_host2}}
+  host: ${{jk_app_host}}
   url: /svc/settings/productCodes
   method: GET
   detail: 严管处方药 + 普通处方药 + 发热药品 + 高风险药品 == 校验包88
