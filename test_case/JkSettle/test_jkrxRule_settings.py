@@ -1,7 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022-07-21 15:42:15
-# @Author : BettyHuang
 
 
 import allure

@@ -12,7 +12,6 @@ from utils.noticUtils.weChatSendControl import WeChatSend
 from utils.otherUtils.allureDate.error_case_excel import ErrorCaseExcel
 from utils.otherUtils.get_conf_data import get_notification_type
 from utils.otherUtils.get_conf_data import project_name, get_excel_report_switch
-from utils.readFilesUtils.caseAutomaticControl import TestCaseAutomaticGeneration
 
 
 def run():
@@ -26,7 +25,7 @@ def run():
                 """.format(project_name)
         )
         # 判断现有的测试用例，如果未生成测试代码，则自动生成pwd
-        TestCaseAutomaticGeneration().get_case_automatic()
+        # TestCaseAutomaticGeneration().get_case_automatic()
 
         pytest.main(['-s', '-W', 'ignore:Module already imported:pytest.PytestWarning',
                      '--alluredir', '/Users/bettyhuang/.jenkins/workspace/Pytest_Auto_APi_Master/report/tmp',

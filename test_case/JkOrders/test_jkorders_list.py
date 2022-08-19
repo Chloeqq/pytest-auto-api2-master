@@ -1,18 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022-06-22 18:51:58
-# @Author : BettyHuang
+
 
 
 import allure
 import pytest
-from common.setting import ConfigHandler
-from utils.readFilesUtils.get_yaml_data_analysis import CaseData
-from utils.assertUtils.assertControl import Assert
-from utils.requestsUtils.requestControl import RequestControl
-from utils.readFilesUtils.regularControl import regular
-from utils.requestsUtils.teardownControl import TearDownHandler
 
+from common.setting import ConfigHandler
+from utils.assertUtils.assertControl import Assert
+from utils.readFilesUtils.get_yaml_data_analysis import CaseData
+from utils.readFilesUtils.regularControl import regular
+from utils.requestsUtils.requestControl import RequestControl
+from utils.requestsUtils.teardownControl import TearDownHandler
 
 TestData = CaseData(ConfigHandler.data_path + r'JkOrders/jkorders_list.yaml').case_process()
 re_data = regular(str(TestData))
