@@ -1,14 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022/3/28 13:22
-# @Author : 余少琪
 
 import os
+
 from common.setting import ConfigHandler
-from utils.readFilesUtils.testcase_template import write_testcase_file
-from utils.readFilesUtils.yamlControl import GetYamlData
 from utils.otherUtils.get_os_sep import get_os_sep
 from utils.readFilesUtils.get_all_files_path import get_all_files
+from utils.readFilesUtils.testcase_template import write_testcase_file
+from utils.readFilesUtils.yamlControl import GetYamlData
 
 
 class TestCaseAutomaticGeneration:

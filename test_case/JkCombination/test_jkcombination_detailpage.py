@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022-06-21 19:26:38
-# @Author : BettyHuang
+
 
 
 import allure
@@ -19,10 +18,10 @@ re_data = regular(str(TestData))
 
 
 @allure.epic("开发平台接口")
-@allure.feature("搭销模块")
+@allure.feature("搭销组合模块")
 class TestJkcombinationDetailpage:
 
-    @allure.story("搭销详情页")
+    @allure.story("搭销组合详情页")
     @pytest.mark.parametrize('in_data', eval(re_data), ids=[i['detail'] for i in TestData])
     def test_jkcombination_detailpage(self, in_data, case_skip):
         """

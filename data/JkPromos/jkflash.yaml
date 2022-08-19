@@ -26,7 +26,6 @@ flash_01:
         # 依赖的数据
     dependence_case_data:
     assert:
-      # 断言接口状态码
       status_code: 200
       data:
         jsonpath: $.data

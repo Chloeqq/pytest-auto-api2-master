@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022-07-21 10:39:04
-# @Author : BettyHuang
+
 
 
 import allure
@@ -22,7 +21,7 @@ re_data = regular(str(TestData))
 @allure.feature("结算模块")
 class TestJksettleSettings:
 
-    @allure.story("结算页用药人信息")
+    @allure.story("用药人校验包信息")
     @pytest.mark.parametrize('in_data', eval(re_data), ids=[i['detail'] for i in TestData])
     def test_jksettle_settings(self, in_data, case_skip):
         """

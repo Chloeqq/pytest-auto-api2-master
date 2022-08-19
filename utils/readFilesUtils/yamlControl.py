@@ -93,9 +93,9 @@ class GetCaseData(GetYamlData):
 
 
 if __name__ == "__main__":
-    pass
-    # file_dir = r"/Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/data/JkLogin/jklogin.yaml"
-    # print(f"获取yaml文件中的数据：\n", GetYamlData(file_dir).get_yaml_data())
-    # print(type(GetYamlData(file_dir).get_yaml_data()))
-    # print(f"\n获取yaml文件中的数据并指定格式：\n", GetCaseData(file_dir).get_yaml_case_data())
-    # print(type(GetCaseData(file_dir).get_yaml_case_data()))
+    # pass
+    file_dir = r"/Users/bettyhuang/Downloads/GitHub代码/pytest-auto-api2-master/data/JkLogin/jklogin.yaml"
+    print(f"获取yaml文件中的数据：\n", GetYamlData(file_dir).get_yaml_data())
+    print(type(GetYamlData(file_dir).get_yaml_data()))
+    print(f"\n获取yaml文件中的数据并指定格式：\n", GetCaseData(file_dir).get_yaml_case_data())
+    print(type(GetCaseData(file_dir).get_yaml_case_data()))
