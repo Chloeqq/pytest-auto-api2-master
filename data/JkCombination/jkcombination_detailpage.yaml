@@ -16,7 +16,7 @@ combination_detailpage_01:
     x-jk-udid: ${{x_jk_udid}}
     versionname: ${{versionname}}
     x-jk-x: $cache{x_jk_x}
-    # 请求的数据，是 params 还是 json、或者file、date
+  # 请求的数据，是 params 还是 json、或者file、date
   requestType: json
   # 是否执行，空或者 true 都会执行
   is_run:
