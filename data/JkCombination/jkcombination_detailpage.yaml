@@ -5,7 +5,7 @@ case_common:
   allureStory: 搭销组合详情页
 
 combination_detailpage_01:
-  host: ${{jk_app_host2}}
+    host: ${{jk_app_host2}}
     url: /v5/combination/${{combineId}}
     method: GET
     detail: 搭销详情页整体数据
