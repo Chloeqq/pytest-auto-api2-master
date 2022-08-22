@@ -5,7 +5,7 @@ case_common:
   allureStory: 秒杀活动
 
 flash_01:
-  host: ${{jk_app_host2}}
+    host: ${{jk_app_host2}}
     url: /v5/flash
     method: GET
     detail: 查询全局广告信息
