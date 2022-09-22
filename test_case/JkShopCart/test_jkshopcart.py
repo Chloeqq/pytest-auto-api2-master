@@ -2,15 +2,16 @@
 # -*- coding: utf-8 -*-
 
 
+
 import allure
 import pytest
-
 from common.setting import ConfigHandler
-from utils.assertUtils.assertControl import Assert
 from utils.readFilesUtils.get_yaml_data_analysis import CaseData
-from utils.readFilesUtils.regularControl import regular
+from utils.assertUtils.assertControl import Assert
 from utils.requestsUtils.requestControl import RequestControl
+from utils.readFilesUtils.regularControl import regular
 from utils.requestsUtils.teardownControl import TearDownHandler
+
 
 TestData = CaseData(ConfigHandler.data_path + r'JkShopCart/jkshopcart.yaml').case_process()
 re_data = regular(str(TestData))
@@ -29,7 +30,7 @@ class TestJkshopcart:
         """
         res = RequestControl().http_request(in_data)
         TearDownHandler().teardown_handle(res)
-        Assert(in_data['assert']).assert_equality(response_data=res['response_data'],
+        Assert(in_data['assert']).assert_equality(response_data=res['response_data'], 
                                                   sql_data=res['sql_data'], status_code=res['status_code'])
 
 

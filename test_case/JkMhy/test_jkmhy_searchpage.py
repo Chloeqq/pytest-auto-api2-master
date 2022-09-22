@@ -13,17 +13,17 @@ from utils.readFilesUtils.regularControl import regular
 from utils.requestsUtils.teardownControl import TearDownHandler
 
 
-TestData = CaseData(ConfigHandler.data_path + r'JkOrders/jkorders_list.yaml').case_process()
+TestData = CaseData(ConfigHandler.data_path + r'JkMhy/jkmhy_searchpage.yaml').case_process()
 re_data = regular(str(TestData))
 
 
 @allure.epic("开发平台接口")
-@allure.feature("订单模块")
-class TestJkordersList:
+@allure.feature("健客推荐模块")
+class TestJkmhySearchpage:
 
-    @allure.story("订单列表")
+    @allure.story("物流页-可能帮到你")
     @pytest.mark.parametrize('in_data', eval(re_data), ids=[i['detail'] for i in TestData])
-    def test_jkorders_list(self, in_data, case_skip):
+    def test_jkmhy_searchpage(self, in_data, case_skip):
         """
         :param :
         :return:
@@ -35,4 +35,4 @@ class TestJkordersList:
 
 
 if __name__ == '__main__':
-    pytest.main(['test_jkorders_list.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
+    pytest.main(['test_jkmhy_searchpage.py', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])

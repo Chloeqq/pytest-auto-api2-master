@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# @Time   : 2022/3/22 13:45
-# @Author : 余少琪
+
 
 
 from utils.otherUtils.get_conf_data import sql_switch

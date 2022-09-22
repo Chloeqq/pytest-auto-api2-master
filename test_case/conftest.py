@@ -1,7 +1,4 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time   : 2022/3/30 14:12
-# @Author : 余少琪
+
 import json
 import os
 import time
@@ -72,7 +69,7 @@ def work_login_init():
     url = "http://acgi.internal.jianke.com/passport/account/login/v2"
     data = json.dumps({
         "loginName": 13544529580,  # 15557188338
-        "password": '12345Jk#',
+        "password": "12345Jk#",
         "platform": 3
     })
     headers = {'Content-Type': 'application/json'}

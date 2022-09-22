@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-# @Time   : 2022/4/7 11:56
-# @Author : 余少琪
 
 import os
 
@@ -15,3 +11,6 @@ def del_file(path):
             del_file(c_path)
         else:
             os.remove(c_path)
+
+if __name__ == "__main__":
+    pass

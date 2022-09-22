@@ -1,0 +1,384 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 搜索模块
+  allureStory: 搜索接口
+
+search_keyword_01:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/shadingWords
+    method: GET
+    detail: 搜索框滚动热词_首页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_02:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/hotSpots
+    method: GET
+    detail: 搜索页_底部热词
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_03:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/associate
+    method: GET
+    detail: 模糊搜索_关键词_综合
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: code119
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_04:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/associate
+    method: GET
+    detail: 模糊搜索_关键词_价格降序
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: 感冒
+      sort: lowestPrice-desc
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_05:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/associate
+    method: GET
+    detail: 模糊搜索_关键词_价格升序
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: 感冒
+      sort: lowestPrice-asc
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_06:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/associate
+    method: GET
+    detail: 模糊搜索_关键词_销量降序
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: 感冒
+      sort: saleQuantity-desc
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_07:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/brands
+    method: GET
+    detail: 模糊搜索_关键词_筛选_全部
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: code119
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_08:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/brands
+    method: GET
+    detail: 模糊搜索_关键词_筛选_处方药
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: code119
+      cfType: 2
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_09:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/brands
+    method: GET
+    detail: 模糊搜索_关键词_筛选_非处方药
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: code119
+      cfType: 1
+
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_10:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/shadingWords
+    method: GET
+    detail: 搜索框滚动热词_首页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: json
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+search_keyword_11:
+    host: ${{jk_app_host2}}
+    url: /v5/searchs/brands
+    method: GET
+    detail: 模糊搜索_关键词_筛选_为空
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      keyword: code119
+      cfType: ""
+
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+    search_keyword_12:
+      host: ${{jk_app_host2}}
+      url: /v5/searchs
+      method: GET
+      detail: 模糊搜索_关键词_筛选_品牌_处方药
+      headers:
+        Content-Type: application/json
+        authorization: $cache{token}
+        platform: ${{platform}}
+        x-jk-udid: ${{x_jk_udid}}
+        versionname: ${{versionname}}
+        x-jk-x: $cache{x_jk_x}
+      # 请求的数据，是 params 还是 json、或者file、data
+      requestType: params
+      # 是否执行，空或者 true 都会执行
+      is_run:
+      data:
+        keyword: 发烧
+        brand: 999
+        cfType: 2
+      # 是否有依赖业务，为空或者false则表示没有
+      dependence_case: False
+      # 依赖的数据
+      dependence_case_data:
+      assert:
+        # 断言接口状态码
+        success:
+          jsonpath: $.success
+          type: ==
+          value: True
+          AssertType:
+      sql:

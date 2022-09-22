@@ -1,0 +1,278 @@
+# 公共参数
+case_common:
+  allureEpic: 开发平台接口
+  allureFeature: 健客推荐模块
+  allureStory: 首页-可能帮到你推荐列表
+
+mhy_homepage_01:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第1页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 1
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_02:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第2页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 2
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_03:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第3页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 3
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_04:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第4页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 4
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_05:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第5页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 5
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_06:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第6页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 6
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_07:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第7页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 7
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
+mhy_homepage_08:
+    host: ${{jk_app_host2}}
+    url: /v5/mhy
+    method: GET
+    detail: 首页-可能帮到你第8页
+    headers:
+      Content-Type: application/json
+      authorization: $cache{token}
+      platform: ${{platform}}
+      x-jk-udid: ${{x_jk_udid}}
+      versionname: ${{versionname}}
+      x-jk-x: $cache{x_jk_x}
+    # 请求的数据，是 params 还是 json、或者file、data
+    requestType: params
+    # 是否执行，空或者 true 都会执行
+    is_run:
+    data:
+      platForm: app
+      curpage: homepage
+      page: 8
+      size: 10
+    # 是否有依赖业务，为空或者false则表示没有
+    dependence_case: False
+        # 依赖的数据
+    dependence_case_data:
+    assert:
+      # 断言接口状态码
+      success:
+        jsonpath: $.success
+        type: ==
+        value: True
+        AssertType:
+    sql:
+
